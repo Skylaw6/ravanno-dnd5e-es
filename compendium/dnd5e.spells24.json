@@ -3,16 +3,27 @@
   "mapping": {
     "materials": "system.materials.value",
     "effects": {
-      "path": "effects",
-      "converter": "effects"
+        "path": "effects",
+        "converter": "structured",
+        "container": "array",
+        "key": "name",
+        "mapping": {
+            "name": "name",
+            "description": "description"
+        }
     },
     "range": {
       "path": "system.range",
       "converter": "range"
     },
     "activities": {
-      "path": "system.activities",
-      "converter": "activities"
+        "path": "system.activities",
+        "converter": "structured",
+        "container": "keyed",
+        "key": "name",
+        "mapping": {
+            "name": "name"
+        }
     },
     "target": {
       "path": "system.target",
