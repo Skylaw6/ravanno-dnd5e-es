@@ -1,5 +1,5 @@
 {
-  "label": "Conjuros (SRD)",
+  "label": "Conjuros",
   "mapping": {
     "materials": "system.materials.value",
     "effects": {
@@ -50,7 +50,7 @@
     },
     "phbFaithfulHound": {
       "name": "Mastín Fiel",
-      "description": "<p>Conjuras un perro guardián en un espacio sin ocupar que puedas ver dentro del alcance. El perro permanece hasta que el conjuro termine o hasta que os alejéis a más de 300 pies (90 metros) de distancia el uno del otro.</p><p>Solo tú puedes verlo y es intangible e invulnerable. Cuando una criatura Pequeña o de mayor tamaño se acerque a 30 pies (9 metros) o menos de él sin decir la contraseña que especifiques al lanzar el conjuro, el mastín empezará a ladrar ruidosamente. Además, tiene &amp;Reference[Truesight] hasta 30 pies (9 metros).</p><p>Al principio de cada uno de tus turnos, el mastín tratará de morder a un enemigo que esté a 5 pies (1,5 metros) o menos de él. Ese enemigo deberá superar una <strong>Tirada de Salvación de Destreza</strong> o recibe [[/damage 4d8 force]] de daño.</p><p>En tus siguientes turnos, puedes usar una <strong>Acción de Magia</strong> para mover el mastín hasta 30 pies (9 metros).</p>",
+      "description": "<p>Conjuras un perro guardián en un espacio sin ocupar que puedas ver dentro del alcance. El perro permanece hasta que el conjuro termine o hasta que os alejéis a más de 300 pies (90 metros) de distancia el uno del otro.</p><p>Solo tú puedes verlo y es intangible e invulnerable. Cuando una criatura Pequeña o de mayor tamaño se acerque a 30 pies (9 metros) o menos de él sin decir la contraseña que especifiques al lanzar el conjuro, el mastín empezará a ladrar ruidosamente. Además, tiene &amp;Reference[Truesight]{Vista Verdadera} hasta 30 pies (9 metros).</p><p>Al principio de cada uno de tus turnos, el mastín tratará de morder a un enemigo que esté a 5 pies (1,5 metros) o menos de él. Ese enemigo deberá superar una <strong>Tirada de Salvación de Destreza</strong> o recibe [[/damage 4d8 force]]{4d8 de daño de Fuerza}.</p><p>En tus siguientes turnos, puedes usar una Acción de &reference[Magic]{Magia} para mover el mastín hasta 30 pies (9 metros).</p>",
       "materials": "un silbato de plata",
       "activities": {
         "Move Hound": {
@@ -59,7 +59,7 @@
       }
     },
     "phbMagnificentMa": {
-      "name": "Magnificent Mansion",
+      "name": "Mansión Magnífica",
       "description": "<p>Conjuras una puerta brillante dentro del alcance que permanece hasta que el conjuro termine. La puerta mide 5 pies (1,5 metros) de ancho y 10 pies (3 metros) de alto y lleva a una morada extradimensional. Tú y cualquier criatura que designes cuando lances el conjuro podréis entrar en la morada extradimensional mientras la puerta permanezca abierta. Puedes abrirla o cerrarla (no requiere acción) si estás a 30 pies (9 metros) o menos de ella. Mientras permanezca cerrada, es imperceptible.</p><p>Al otro lado de la puerta encuentras un fastuoso recibidor, tras el cual se hallan numerosas estancias. La morada está limpia y es fresca y cálida.</p><p>Puedes crear cualquier plano de planta que desees, pero no puede superar los 50 cubos contiguos, cada uno de 10 pies (3 metros) de lado. El lugar está amueblado y decorado como elijas y contiene comida suficiente como para servir un banquete de nueve platos a hasta 100 personas. Los muebles y otros objetos creados por este conjuro se convierten en humo si se sacan del lugar.</p><p>El personal de servicio está compuesto de 100 sirvientes casi transparentes que atienden a todos los que entran. Tú decides la apariencia y el atuendo de estos sirvientes, que son invulnerables y obedecen tus órdenes. Los sirvientes pueden realizar las tareas que haría un humano, pero no pueden atacar ni realizar ninguna acción que dañaría directamente a otra criatura. Por lo tanto, pueden traer y llevar cosas, limpiar, arreglar y plegar ropa, encender fuegos, servir comida y vino, etc., aunque no pueden abandonar el lugar.</p><p>Cuando el conjuro termina, todas las criaturas u objetos que queden en el espacio extradimensional son expulsados a los espacios sin ocupar más cercanos a la entrada.</p>",
       "materials": "una puerta en miniatura que valga al menos 15 po",
       "activities": {
@@ -69,66 +69,65 @@
       }
     },
     "phbPhantasmalFor": {
-      "name": "Phantasmal Force",
-      "description": "<div><p>You attempt to craft an illusion in the mind of a creature you can see within range. The target makes an Intelligence saving throw. On a failed save, you create a phantasmal object, creature, or other phenomenon that is no larger than a 10-foot Cube and that is perceivable only to the target for the duration. The phantasm includes sound, temperature, and other stimuli.</p><p>The target can take a &amp;Reference[Study]{Study} action to examine the phantasm with an [[/check ability=int skill=inv dc=@attributes.spell.dc]] check against your spell save DC. If the check succeeds, the target realizes that the phantasm is an illusion, and the spell ends.</p><p>While affected by the spell, the target treats the phantasm as if it were real and rationalizes any illogical outcomes from interacting with it. For example, if the target steps through a phantasmal bridge and survives the fall, it believes the bridge exists and something else caused it to fall.</p><p>An affected target can even take damage from the illusion if the phantasm represents a dangerous creature or hazard. On each of your turns, such a phantasm can deal 2d8 Psychic damage to the target if it is in the phantasm's area or within 5 feet of the phantasm. The target perceives the damage as a type appropriate to the illusion.</p></div>",
-      "materials": "a bit of fleece",
+      "name": "Fuerza Fantasmal",
+      "description": "<p>Intentas crear una ilusión en la mente de una criatura que puedas ver dentro del alcance. El objetivo hace una [[/save ability=int dc=@attributes.spell.dc]]{Tirada de Salvación de Inteligencia}. Si la falla, creas un objeto o una criatura fantasmal u otro fenómeno cuyas dimensiones no excedan las de un cubo de 10 pies (3 metros) de lado y que solo puede percibir el objetivo hasta que el conjuro termine. El fantasma puede emitir sonidos, alterar la temperatura y producir otros estímulos.</p><p>El objetivo puede usar una Acción de &amp;Reference[Study]{Estudiar} para examinar la imagen con una [[/check ability=int skill=inv dc=@attributes.spell.dc]]{Prueba de Inteligencia (Investigación)} contra tu <strong>CD de Salvación de Conjuros</strong>. Si la supera, se da cuenta de que el fantasma es una ilusión y el conjuro termina.</p><p>Mientras esté afectado por este conjuro, el objetivo tratará al fantasma como si fuera real y racionalizará cualquier resultado ilógico derivado de interactuar con él. Por ejemplo, si el objetivo intenta caminar por un puente ilusorio y sobrevive a la caída, creerá que el puente existe y que otra cosa ha provocado su caída.</p><p>Un objetivo afectado incluso puede recibir daño de la ilusión si el fantasma se muestra como una amenaza o una criatura peligrosa. En cada uno de tus turnos, la forma fantasmal puede causar [[/damage 2d8 psychic]]{2d8 de daño Psíquico} al objetivo si está en el área que ocupa el fantasma o a 5 pies (1,5 metros) de él. El objetivo percibe el daño como de un tipo apropiado para la ilusión.</p>",
+      "materials": "un poco de vellón",
       "activities": {
         "Cast": {
-          "name": "Cast"
+          "name": "Lanzar"
         },
         "Phantasm Damage": {
-          "name": "Phantasm Damage"
+          "name": "Daño Fantasmal"
         }
       },
       "effects": {
         "Seeing Illusions": {
-          "name": "Seeing Illusions",
-          "description": "<p>The target can take a &amp;Reference[Study]{Study} action to examine the phantasm with an [[/check ability=int skill=inv]] check against your spell save DC. If the check succeeds, the target realizes that the phantasm is an illusion, and the spell ends.</p>"
+          "name": "Viendo ilusiones",
+          "description": "<p>El objetivo puede realizar una &amp;Reference[Study]{Acción de Estudiar} para examinar el fantasma con una [[/check ability=int skill=inv]]{Prueba de Inteligencia (Investigación)} contra tu <strong>CD de Salvación de Conjuros</strong>. Si la prueba tiene éxito, el objetivo se da cuenta de que el fantasma es una ilusión y el conjuro termina.</p>"
         }
       }
     },
     "phbPrivateSanctu": {
-      "name": "Private Sanctum",
-      "description": "<div><p>You make an area within range magically secure. The area is a Cube that can be as small as 5 feet to as large as 100 feet on each side. The spell lasts for the duration.</p><p>When you cast the spell, you decide what sort of security the spell provides, choosing any of the following properties:</p><ul><li>Sound can't pass through the barrier at the edge of the warded area.</li><li>The barrier of the warded area appears dark and foggy, preventing vision (including &amp;Reference[Darkvision]) through it.</li><li>Sensors created by Divination spells can't appear inside the protected area or pass through the barrier at its perimeter.</li><li>Creatures in the area can't be targeted by Divination spells.</li><li>Nothing can teleport into or out of the warded area.</li><li>Planar travel is blocked within the warded area.</li></ul><p>Casting this spell on the same spot every day for 365 days makes the spell last until dispelled.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can increase the size of the Cube by 100 feet for each spell slot level above 4.</p></div>",
-      "materials": "a thin sheet of lead"
+      "name": "Sanctasanctórum privado",
+      "description": "<p>Haces que una zona dentro del alcance sea mágicamente segura. Esta zona es un cubo que puede tener un tamaño desde tan solo 5 pies (1,5 metros) de lado hasta 100 pies (30 metros) de lado. El conjuro permanece hasta que termine.</p><p>Cuando lanzas el conjuro, decides el tipo de seguridad que proporciona eligiendo cualesquiera de las siguientes propiedades:</p><ul><li>El sonido no puede atravesar la barrera del perímetro de la zona protegida.</li><li>La barrera de la zona protegida parece oscura y con niebla, impidiendo ver a través de ella (incluso con &amp;Reference[Darkvision]{Visión en la Oscuridad}).</li><li>Dentro de la zona protegida no pueden aparecer sensores creados mediante conjuros de adivinación, ni estos pueden atravesar la barrera del perímetro.</li><li>Las criaturas en la zona no pueden ser el objetivo de conjuros de adivinación.</li><li>Nada puede teletransportarse ni al interior ni al exterior del área protegida.</li><li>El viaje interplanar está bloqueado dentro de la zona.</li></ul><p>Si este conjuro se lanza a diario en el mismo lugar durante 365 días, durará hasta que sea disipado.</p><p><strong>Usar un Espacio de Conjuro de Nivel Superior.</strong> Puedes aumentar el tamaño del cubo en 100 pies (30 metros) por cada nivel por encima de 4 que tenga el espacio.</p>",
+      "materials": "una lámina fina de plomo"
     },
     "phbProtectionFro": {
-      "name": "Protection from Energy",
-      "description": "<div><p>For the duration, the willing creature you touch has Resistance to one damage type of your choice: Acid, Cold, Fire, Lightning, or Thunder.</p></div>",
+      "name": "Protección contra Energía",
+      "description": "<p>Hasta que termine el conjuro, una criatura voluntaria a la que toques tendrá <strong>Resistencia</strong> a un tipo de daño de tu elección: <strong>Ácido</strong>, <strong>Frío</strong>, <strong>Fuego</strong>, <strong>Relámpago</strong> o <strong>Trueno</strong>.</p>",
       "effects": {
         "Acid Protection": {
-          "name": "Acid Protection"
+          "name": "Protección contra Ácido"
         },
         "Cold Protection": {
-          "name": "Cold Protection"
+          "name": "Protección contra Frío"
         },
         "Fire Protection": {
-          "name": "Fire Protection"
+          "name": "Protección contra Fuego"
         },
         "Lightning Protection": {
-          "name": "Lightning Protection"
+          "name": "Protección contra Relámpago"
         },
         "Thunder Protection": {
-          "name": "Thunder Protection"
+          "name": "Protección contra Trueno"
         }
       }
     },
     "phbSanctuary0000": {
       "name": "Sanctuary",
-      "description": "<div><p>You ward a creature within range. Until the spell ends, any creature who targets the warded creature with an attack roll or a damaging spell must succeed on a [[/save ability=wis dc=@attributes.spell.dc format=long]] or either choose a new target or lose the attack or spell. This spell doesn't protect the warded creature from areas of effect. The spell ends if the warded creature makes an attack roll, casts a spell, or deals damage.</p></div>",
-      "materials": "a shard of glass from a mirror",
+      "description": "<p>Proteges a una criatura que esté dentro del alcance. Hasta que el conjuro termine, cualquier criatura que haga objetivo a la criatura protegida con un <strong>Ataque</strong> o un conjuro que inflija daño deberá superar primero una [[/save ability=wis dc=@attributes.spell.dc format=long]]{Tirada de Salvación de Sabiduría}; de lo contrario, elegirá un nuevo objetivo o perderá el ataque o conjuro. Este conjuro no protege a la criatura contra los efectos de área. El conjuro termina si la criatura protegida hace una <strong>Tirada de Ataque</strong>, lanza un conjuro o inflige daño.</p>",
       "activities": {
         "Cast": {
-          "name": "Cast"
+          "name": "Lanzar"
         },
         "Save on Target": {
-          "name": "Save on Target"
+          "name": "Salvación en Objetivo"
         }
       },
       "effects": {
         "Warded": {
-          "name": "Warded",
-          "description": "<p>Until the spell ends, any creature who targets the warded creature with an attack roll or a damaging spell must succeed on a [[/save ability=wis format=long]] or either choose a new target or lose the attack or spell.</p><p> The spell ends if the warded creature makes an attack roll, casts a spell, or deals damage.</p>"
+          "name": "Protegido",
+          "description": "<p>Hasta que el conjuro termine, cualquier criatura que haga objetivo a la criatura protegida con una <strong>Tirada de Ataque</strong> o un conjuro que inflija daño deberá superar una [[/save ability=wis format=long]]{Tirada de Salvación de Sabiduría} o elegir un nuevo objetivo o perder la tirada de ataque o el conjuro.</p><p>El conjuro termina si la criatura protegida hace una <strong>Tirada de Ataque</strong>, lanza un conjuro o inflige daño.</p>"
         }
       }
     },
