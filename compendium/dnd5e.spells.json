@@ -21,7 +21,7 @@
 			"path": "data.target",
 			"converter": "range"
 		},
-        "materials": "data.materials.value"
+        "material": "system.materials.value"
     },
 	"entries": {
 		"Acid Arrow": {
