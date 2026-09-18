@@ -1,7 +1,7 @@
 {
   "id": "ravanno-dnd5e-es",
   "title": "Translation: Español [DnD5e]",
-  "description": "Traducción al español del sistema de Dungeons &amp; Dragons 5E (SRD).",
+  "description": "Traducción al español del sistema de Dungeons &amp; Dragons 5E (SRD). Modificación con el Compendio 2024 traducido",
   "version": "5.3.3",
   "compatibility": {
     "minimum": "11.315",
