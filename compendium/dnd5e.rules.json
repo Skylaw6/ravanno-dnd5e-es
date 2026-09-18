@@ -1,11 +1,5 @@
 {
-	"label": "Reglamento (SRD)",
-    "mapping": {
-        "pages": {
-            "path": "pages",
-            "converter": "dnd5ePages"
-        }
-    },  
+	"label": "Reglamento (SRD)",  
 	"entries": {
 		"Appendix A: Conditions": {
 			"name": "Apéndice A: Estados",
