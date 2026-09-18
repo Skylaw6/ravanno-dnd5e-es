@@ -187,15 +187,15 @@
       }
     },
     "phbsplAlarm00000": {
-      "name": "Alarm",
-      "description": "<p>You set an alarm against intrusion. Choose a door, a window, or an area within range that is no larger than a 20-foot Cube. Until the spell ends, an alarm alerts you whenever a creature touches or enters the warded area. When you cast the spell, you can designate creatures that won't set off the alarm. You also choose whether the alarm is audible or mental:</p><p><strong>Audible Alarm.</strong> The alarm produces the sound of a handbell for 10 seconds within 60 feet of the warded area.</p><p><strong>Mental Alarm.</strong> You are alerted by a mental ping if you are within 1 mile of the warded area. This ping awakens you if you're asleep.</p>",
-      "materials": "a bell and silver wire",
+      "name": "Alarma",
+      "description": "<p>Preparas una alarma contra los intrusos. Elige una puerta, una ventana o una zona dentro del alcance que no sea mayor que un Cubo de 20 pies (6 m) de lado. Hasta que el conjuro termine, una alarma te alertará siempre que una criatura toque la zona vigilada o entre en ella. Al lanzar el conjuro, puedes designar qué criaturas no activarán la alarma, que puede ser mental o sonora:</p><p><strong>Alarma mental.</strong> La alarma te avisará con un sonido dentro de tu mente si estás a 1 milla (1,6 km) o menos de la zona vigilada. Si estás durmiendo, te despertará.</p><p><strong>Alarma sonora.</strong> La alarma producirá el sonido de una campanilla durante 10 segundos, que será audible a 60 pies (18 m) o menos de la zona vigilada.</p>",
+      "materials": "una campanilla e hilo de plata",
       "activities": {
         "Cast over Area": {
-          "name": "Cast over Area"
+          "name": "Lanzar sobre una zona"
         },
         "Cast on Window or Door": {
-          "name": "Cast on Window or Door"
+          "name": "Lanzar sobre una ventana o puerta"
         }
       }
     },
@@ -237,13 +237,13 @@
       }
     },
     "phbsplAnimalFrie": {
-      "name": "Animal Friendship",
-      "description": "<p>Target a Beast that you can see within range. The target must succeed on a Wisdom saving throw or have the &amp;Reference[charmed apply=false] condition for the duration. If you or one of your allies deals damage to the target, the spells ends.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can target one additional Beast for each spell slot level above 1.</p>",
-      "materials": "a morsel of food",
+      "name": "Encantar animal",
+      "description": "<p>Haces objetivo a una &amp;Reference[beast]{Bestia} que puedas ver dentro del alcance. El objetivo deberá superar una [[/save wis dc=@attributes.spell.dc]]{tirada de salvación de Sabiduría} o tendrá el estado &amp;Reference[charmed apply=false]{Hechizado} hasta que termine el conjuro. Si alguno de tus aliados o tú dañáis al objetivo, el conjuro termina.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> Puedes hacer objetivo a una &amp;Reference[beast]{Bestia} adicional por cada nivel por encima de 1 que tenga el espacio.</p>",
+      "materials": "unas migajas de comida",
       "effects": {
         "Charmed": {
-          "name": "Charmed",
-          "description": "<p><span style=\"font-family:Signika, sans-serif\">The target has the &amp;Reference[charmed apply=false] condition for the duration. If you or one of your allies deals damage to the target, the spells ends.</span></p>"
+          "name": "Hechizado",
+          "description": "<p>El objetivo tiene el estado &amp;Reference[charmed apply=false]{Hechizado} hasta que termine el conjuro. Si alguno de tus aliados o tú dañáis al objetivo, el conjuro termina.</p>"
         }
       }
     },
@@ -422,13 +422,13 @@
       "materials": "an agate worth 1,000+ GP, which the spell consumes"
     },
     "phbsplBane000000": {
-      "name": "Bane",
-      "description": "<p>Up to three creatures of your choice that you can see within range must each make a Charisma saving throw. Whenever a target that fails this save makes an attack roll or a saving throw before the spell ends, the target must subtract 1d4 from the attack roll or save.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can target one additional creature for each spell slot level above 1.</p>",
-      "materials": "a drop of blood",
+      "name": "Perdición",
+      "description": "<p>Hasta tres criaturas de tu elección a las que puedas ver dentro del alcance deberán hacer una [[/save cha dc=@attributes.spell.dc]]{tirada de salvación de Carisma} cada una. Siempre que un objetivo que haya fallado esta tirada de salvación haga una tirada de ataque o de salvación antes de que termine el conjuro, deberá restar [[/roll 1d4]] al resultado de dicha tirada.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> Puedes hacer objetivo a una criatura adicional por cada nivel por encima de 1 que tenga el espacio.</p>",
+      "materials": "una gota de sangre",
       "effects": {
         "Bane": {
-          "name": "Bane",
-          "description": "<p>Whenever a target makes an attack roll or a saving throw before the spell ends, the target must subtract 1d4 from the attack roll or save.</p>"
+          "name": "Perdición",
+          "description": "<p>Siempre que un objetivo haga una tirada de ataque o de salvación antes de que termine el conjuro, deberá restar [[/roll 1d4]] al resultado de dicha tirada.</p>"
         }
       }
     },
@@ -548,13 +548,13 @@
       }
     },
     "phbsplBless00000": {
-      "name": "Bless",
-      "description": "<p>You bless up to three creatures within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target adds 1d4 to the attack roll or save.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can target one additional creature for each spell slot level above 1.</p>",
-      "materials": "a Holy Symbol worth 5+ GP",
+      "name": "Bendición",
+      "description": "<p>Bendices hasta tres criaturas dentro del alcance. Siempre que un objetivo haga una tirada de ataque o de salvación antes de que termine el conjuro, sumará [[/roll 1d4]] al resultado de dicha tirada.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> Puedes hacer objetivo a una criatura adicional por cada nivel por encima de 1 que tenga el espacio.</p>",
+      "materials": "un símbolo sagrado que valga al menos 5 po",
       "effects": {
         "Blessed": {
-          "name": "Blessed",
-          "description": "<p>Whenever a target makes an attack roll or a saving throw before the spell ends, the target adds 1d4 to the attack roll or save.</p>"
+          "name": "Bendecido",
+          "description": "<p>Siempre que un objetivo haga una tirada de ataque o de salvación antes de que termine el conjuro, sumará [[/roll 1d4]] al resultado de dicha tirada.</p>"
         }
       }
     },
@@ -596,8 +596,8 @@
       }
     },
     "phbsplBurningHan": {
-      "name": "Burning Hands",
-      "description": "<p>A thin sheet of flames shoots forth from you. Each creature in a 15-foot Cone makes a Dexterity saving throw, taking 3d6 Fire damage on a failed save or half as much damage on a successful one.</p><p>Flammable objects in the Cone that aren't being worn or carried start burning.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d6 for each spell slot level above 1.</p>"
+      "name": "Manos ardientes",
+      "description": "<p>Una fina capa de llamas se proyecta desde ti. Todas las criaturas situadas en un Cono de 15 pies (4,5 m) hacen una [[/save dex dc=@attributes.spell.dc]]{tirada de salvación de Destreza}; sufrirán [[/damage 3d6 fire]]{3d6 de daño Fuego} si la fallan o la mitad del daño si la superan.</p><p>Los objetos inflamables dentro del Cono que no lleve o vista nadie empezarán a arder.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> El daño aumenta en [[/damage 1d6 fire]]{1d6} por cada nivel por encima de 1 que tenga el espacio.</p>"
     },
     "phbsplCallLightn": {
       "name": "Call Lightning",
@@ -633,12 +633,12 @@
       }
     },
     "phbsplCharmPerso": {
-      "name": "Charm Person",
-      "description": "<p>One Humanoid you can see within range makes a Wisdom saving throw. It does so with Advantage if you or your allies are fighting it. On a failed save, the target has the &amp;Reference[charmed apply=false] condition until the spell ends or until you or your allies damage it. The Charmed creature is Friendly to you. When the spell ends, the target knows it was Charmed by you.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can target one additional creature for each spell slot level above 1.</p>",
+      "name": "Hechizar persona",
+      "description": "<p>Un &amp;Reference[humanoid]{Humanoide} que puedas ver dentro del alcance realiza una [[/save wis dc=@attributes.spell.dc]]{tirada de salvación de Sabiduría}. La hace con &amp;Reference[advantage] si está luchando contra ti o tus aliados. Si la falla, tendrá el estado &amp;Reference[charmed]{Hechizado} hasta que el conjuro termine o hasta que tus aliados o tú le hagáis daño. La criatura Hechizada es Amistosa contigo, pero cuando el conjuro termine, sabrá que la hechizaste.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> Puedes hacer objetivo a una criatura adicional por cada nivel por encima de 1 que tenga el espacio.</p>",
       "effects": {
         "Charmed": {
-          "name": "Charmed",
-          "description": "<p>the target has the &amp;Reference[charmed apply=false] condition until the spell ends or until you or your allies damage it. The Charmed creature is Friendly to you. When the spell ends, the target knows it was Charmed by you.</p>"
+          "name": "Hechizado",
+          "description": "<p>El objetivo tiene el estado &amp;Reference[charmed apply=false]{Hechizado} hasta que el conjuro termine o hasta que tus aliados o tú le hagáis daño. La criatura Hechizada es Amistosa contigo. Cuando el conjuro termine, sabrá que la hechizaste.</p>"
         }
       }
     },
@@ -653,9 +653,9 @@
       }
     },
     "phbsplChromaticO": {
-      "name": "Chromatic Orb",
-      "description": "<p>You hurl an orb of energy at a target within range. Choose Acid, Cold, Fire, Lightning, Poison, or Thunder for the type of orb you create, and then make a ranged spell attack against the target. On a hit, the target takes 3d8 damage of the chosen type.</p><p>If you roll the same number on two or more of the d8s, the orb leaps to a different target of your choice within 30 feet of the target. Make an attack roll against the new target, and make a new damage roll. The orb can't leap again unless you cast the spell with a level 2+ spell slot. [[@item.level]]{Number of leaps}</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d8 for each spell slot level above 1. The orb can leap a maximum number of times equal to the level of the slot expended, and a creature can be targeted only once by each casting of this spell.</p>",
-      "materials": "a diamond worth 50+ GP"
+      "name": "Orbe cromático",
+      "description": "<p>Lanzas un orbe de energía a un objetivo dentro del alcance. Elige entre Ácido, Frío, Fuego, Relámpago, Trueno o Veneno para el tipo de orbe creado y después haz un [[/attack rs=1]]{ataque de conjuro a distancia} contra el objetivo. Si acierta, el objetivo recibe [[/damage 3d8]]{3d8 de daño} del tipo elegido.</p><p>Si sacas el mismo número en dos o más de los d8, el orbe salta a otro objetivo distinto de tu elección que esté a 30 pies (9 m) o menos del objetivo. Haz una [[/attack rs=1]]{tirada de ataque} contra el nuevo objetivo y otra [[/damage 3d8]]{tirada de daño}. El orbe no puede volver a saltar, a menos que lances el conjuro con un espacio de nivel 2 o superior.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> El daño aumenta en 1d8 por cada nivel por encima de 1 que tenga el espacio. El orbe puede saltar un máximo de veces igual al nivel del espacio gastado. Una criatura solo puede ser el objetivo una vez por cada lanzamiento del conjuro.</p>",
+      "materials": "un diamante que valga al menos 50 po"
     },
     "phbsplCircleofDe": {
       "name": "Circle of Death",
@@ -677,18 +677,18 @@
       "description": "<p>You create a 20-foot-radius Sphere of yellow-green fog centered on a point within range. The fog lasts for the duration or until strong wind (such as the one created by <em>Gust of Wind</em>) disperses it, ending the spell. Its area is Heavily Obscured.</p><p>Each creature in the Sphere makes a Constitution saving throw, taking 5d8 Poison damage on a failed save or half as much damage on a successful one. A creature must also make this save when the Sphere moves into its space and when it enters the Sphere or ends its turn there. A creature makes this save only once per turn.</p><p>The Sphere moves 10 feet away from you at the start of each of your turns.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d8 for each spell slot level above 5.</p>"
     },
     "phbsplColorSpray": {
-      "name": "Color Spray",
-      "description": "<p>You launch a dazzling array of flashing, colorful light. Each creature in a 15-foot Cone originating from you must succeed on a Constitution saving throw or have the &amp;Reference[blinded apply=false] condition until the end of your next turn.</p>",
-      "materials": "a pinch of colorful sand",
+      "name": "Rociada de color",
+      "description": "<p>Emites una ráfaga de luces brillantes y parpadeantes de múltiples colores. Todas las criaturas situadas en un Cono de 15 pies (4,5 m) que se origina en ti deberán superar una [[/save con dc=@attributes.spell.dc]]{tirada de salvación de Constitución} o tendrán el estado &amp;Reference[blinded]{Cegado} hasta el final de tu siguiente turno.</p>",
+      "materials": "una pizca de arena de colores",
       "effects": {
         "Blinded": {
-          "name": "Blinded"
+          "name": "Cegado"
         }
       }
     },
     "phbsplCommand000": {
-      "name": "Command",
-      "description": "<p>You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. Choose the command from these options:</p><p><strong>Approach.</strong> The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.</p><p><strong>Drop.</strong> The target drops whatever it is holding and then ends its turn.</p><p><strong>Flee.</strong> The target spends its turn moving away from you by the fastest available means.</p><p><strong>Grovel.</strong> The target has the Prone condition and then ends its turn.</p><p><strong>Halt.</strong> On its turn, the target doesn't move and takes no action or Bonus Action.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can affect one additional creature for each spell slot level above 1.</p>"
+      "name": "Orden imperiosa",
+      "description": "<p>Das una orden de una sola palabra a una criatura que puedas ver dentro del alcance. El objetivo debe superar una [[/save wis dc=@attributes.spell.dc]]{tirada de salvación de Sabiduría} o verse obligado a obedecer la orden en su próximo turno. Elige una de las siguientes órdenes:</p><p><strong>Acércate.</strong> El objetivo se acerca a ti por la ruta más corta y directa posible, y su turno acaba si se sitúa a 5 pies (1,5 m) o menos de ti.</p><p><strong>Detente.</strong> En su turno, el objetivo no se mueve y no usa acciones ni Acciones Adicionales.</p><p><strong>Huye.</strong> El objetivo emplea su turno en alejarse de ti de la manera más rápida posible.</p><p><strong>Póstrate.</strong> El objetivo adopta el estado &amp;Reference[prone]{Derribado} y termina su turno.</p><p><strong>Suelta.</strong> El objetivo suelta lo que sea que esté sujetando y acaba su turno.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> Puedes afectar a una criatura adicional por cada nivel por encima de 1 que tenga el espacio.</p>"
     },
     "phbsplCommune000": {
       "name": "Commune",
@@ -700,12 +700,12 @@
       "description": "<p>You commune with nature spirits and gain knowledge of the surrounding area. In the outdoors, the spell gives you knowledge of the area within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet. The spell doesn't function where nature has been replaced by construction, such as in castles and settlements.</p><p>Choose three of the following facts; you learn those facts as they pertain to the spell's area:</p><ul><li>Locations of settlements</li><li>Locations of portals to other planes of existence</li><li>Location of one Challenge Rating 10+ creature (DM's choice) that is a Celestial, an Elemental, a Fey, a Fiend, or an Undead</li><li>The most prevalent kind of plant, mineral, or Beast (you choose which to learn)</li><li>Locations of bodies of water</li></ul><p>For example, you could determine the location of a powerful monster in the area, the locations of bodies of water, and the locations of any towns.</p>"
     },
     "phbsplComprehend": {
-      "name": "Comprehend Languages",
-      "description": "<p>For the duration, you understand the literal meaning of any language that you hear or see signed. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode symbols or secret messages.</p>",
-      "materials": "a pinch of soot and salt",
+      "name": "Entender idiomas",
+      "description": "<p>Hasta que el conjuro termine, entiendes el significado literal de las palabras que escuches o veas signadas en cualquier idioma. También comprendes todas las palabras escritas que ves, independientemente del idioma en el que estén, pero debes tocar la superficie en la que estén inscritas. Tardas aproximadamente 1 minuto en leer una página. Este conjuro no descifra mensajes secretos ni símbolos.</p>",
+      "materials": "una pizca de hollín y sal",
       "effects": {
         "Comprehension": {
-          "name": "Comprehension"
+          "name": "Comprensión"
         }
       }
     },
@@ -911,9 +911,9 @@
       }
     },
     "phbsplCreateorDe": {
-      "name": "Create or Destroy Water",
-      "description": "<p>You do one of the following:</p><p><strong>Create Water.</strong> You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot Cube within range, extinguishing exposed flames there.</p><p><strong>Destroy Water.</strong> You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot Cube within range.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You create or destroy 10 additional gallons of water, or the size of the Cube increases by 5 feet, for each spell slot level above 1.</p>",
-      "materials": "a mix of water and sand"
+      "name": "Crear o destruir agua",
+      "description": "<p>Produces uno de estos efectos:</p><p><strong>Crear agua.</strong> Creas hasta 10 galones (40 l) de agua limpia dentro del alcance en un recipiente abierto. Como alternativa, el agua cae en forma de lluvia en un Cubo de 30 pies (9 m) de lado dentro del alcance y apaga las llamas desprotegidas de la zona.</p><p><strong>Destruir agua.</strong> Destruyes hasta 10 galones (40 l) de agua dentro del alcance en un recipiente abierto. Como alternativa, puedes destruir niebla en un Cubo de 30 pies (9 m) de lado dentro del alcance.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> Creas o destruyes 10 galones (40 l) más de agua o el tamaño del Cubo aumenta en 5 pies (1,5 m) por cada nivel por encima de 1 que tenga el espacio.</p>",
+      "materials": "una mezcla de agua y arena"
     },
     "phbsplCreation00": {
       "name": "Creation",
@@ -921,8 +921,8 @@
       "materials": "a paintbrush"
     },
     "phbsplCureWounds": {
-      "name": "Cure Wounds",
-      "description": "<p>A creature you touch regains a number of Hit Points equal to 2d8 plus your spellcasting ability modifier.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The healing increases by 2d8 for each spell slot level above 1.</p>"
+      "name": "Curar heridas",
+      "description": "<p>Una criatura a la que toques recupera una cantidad de puntos de golpe igual a [[/heal 2d8]] más tu modificador por aptitud mágica.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> La curación aumenta en [[/heal 2d8]] por cada nivel por encima de 1 que tenga el espacio.</p>"
     },
     "phbsplDancingLig": {
       "name": "Luces danzantes",
@@ -994,30 +994,30 @@
       "description": "<p>You create a shadowy Medium door on a flat solid surface that you can see within range. This door can be opened and closed, and it leads to a demiplane that is an empty room 30 feet in each dimension, made of wood or stone (your choice).</p><p>When the spell ends, the door vanishes, and any objects inside the demiplane remain there. Any creatures inside also remain unless they opt to be shunted through the door as it vanishes, landing with the &amp;Reference[Prone] condition in the unoccupied spaces closest to the door's former space.</p><p>Each time you cast this spell, you can create a new demiplane or connect the shadowy door to a demiplane you created with a previous casting of this spell. Additionally, if you know the nature and contents of a demiplane created by a casting of this spell by another creature, you can connect the shadowy door to that demiplane instead.</p>"
     },
     "phbsplDetectEvil": {
-      "name": "Detect Evil and Good",
-      "description": "<p>For the duration, you sense the location of any Aberration, Celestial, Elemental, Fey, Fiend, or Undead within 30 feet of yourself. You also sense whether the <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplHallow0000]{Hallow}</em> spell is active there and, if so, where.</p><p>The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead.</p>",
+      "name": "Detectar el bien y el mal",
+      "description": "<p>Hasta que el conjuro termine, percibes la ubicación de cualquier &amp;Reference[aberration]{Aberración}, &amp;Reference[celestial]{Celestial}, &amp;Reference[elemental]{Elemental}, &amp;Reference[fey]{Feérico}, &amp;Reference[fiend]{Infernal} o &amp;Reference[undead]{No muerto} a 30 pies (9 m) o menos de ti. También percibes si hay un conjuro <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplHallow0000]{Consagrar}</em> activo en el espacio y su ubicación.</p><p>El conjuro no puede atravesar 1 pie (30 cm) de piedra, tierra o madera, 1 pulgada (2,5 cm) de metal o una lámina fina de plomo.</p>",
       "effects": {
         "Detect Evil and Good": {
-          "name": "Detect Evil and Good"
+          "name": "Detectar el bien y el mal"
         }
       }
     },
     "phbsplDetectMagi": {
-      "name": "Detect Magic",
-      "description": "<p>For the duration, you sense the presence of magical effects within 30 feet of yourself. If you sense such effects, you can take the Magic action to see a faint aura around any visible creature or object in the area that bears the magic, and if an effect was created by a spell, you learn the spell's school of magic.</p><p>The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead.</p>",
+      "name": "Detectar magia",
+      "description": "<p>Hasta que el conjuro termine, podrás percibir la presencia de efectos mágicos a 30 pies (9 m) o menos de ti. Si percibes alguno, puedes usar una Acción de &amp;Reference[magic] para ver una débil aura alrededor de cualquier objeto o criatura visible dentro de la zona que esté afectada por la magia y, si el efecto lo creó un conjuro, distingues a qué escuela mágica pertenece.</p><p>El conjuro no puede atravesar 1 pie (30 cm) de piedra, tierra o madera, 1 pulgada (2,5 cm) de metal o una lámina fina de plomo.</p>",
       "effects": {
         "Detect Magic": {
-          "name": "Detect Magic"
+          "name": "Detectar magia"
         }
       }
     },
     "phbsplDetectPois": {
-      "name": "Detect Poison and Disease",
-      "description": "<p>For the duration, you sense the location of poisons, poisonous or venomous creatures, and magical contagions within 30 feet of yourself. You sense the kind of poison, creature, or contagion in each case.</p><p>The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead.</p>",
-      "materials": "a yew leaf",
+      "name": "Detectar venenos y enfermedades",
+      "description": "<p>Hasta que el conjuro termine, percibes la ubicación de venenos, criaturas venenosas y enfermedades mágicas a 30 pies (9 m) o menos de ti, e identificas el tipo de veneno, criatura o enfermedad en cada caso.</p><p>El conjuro no puede atravesar 1 pie (30 cm) de piedra, tierra o madera, 1 pulgada (2,5 cm) de metal o una lámina fina de plomo.</p>",
+      "materials": "una hoja de tejo",
       "effects": {
         "Detect Poison and Disease": {
-          "name": "Detect Poison and Disease"
+          "name": "Detectar venenos y enfermedades"
         }
       }
     },
@@ -1039,12 +1039,12 @@
       "description": "<p>You teleport to a location within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as \"200 feet straight downward\" or \"300 feet upward to the northwest at a 45-degree angle.\"</p><p>You can also teleport one willing creature. The creature must be within 5 feet of you when you teleport, and it teleports to a space within 5 feet of your destination space.</p><p>If you, the other creature, or both would arrive in a space occupied by a creature or completely filled by one or more objects, you and any creature traveling with you each take 4d6 Force damage, and the teleportation fails.</p>"
     },
     "phbsplDisguiseSe": {
-      "name": "Disguise Self",
-      "description": "<p>You make yourself—including your clothing, armor, weapons, and other belongings on your person—look different until the spell ends. You can seem 1 foot shorter or taller and can appear heavier or lighter. You must adopt a form that has the same basic arrangement of limbs as you have. Otherwise, the extent of the illusion is up to you.</p><p>The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing.</p><p>To discern that you are disguised, a creature must take the Study action to inspect your appearance and succeed on an [[/check ability=int skill=inv dc=@attributes.spell.dc]] check against your spell save DC.</p>",
+      "name": "Disfrazarse",
+      "description": "<p>Haces que tu aspecto (incluyendo tu vestimenta, armadura, armas y otras posesiones que lleves contigo) parezca diferente hasta que el conjuro termine. Puedes aparentar tener una altura 1 pie (30 cm) mayor o menor y una complexión más pesada o ligera. Debes adoptar una forma que tenga la misma configuración de miembros que tú. Por lo demás, la ilusión puede modificar todo lo que quieras de tu aspecto.</p><p>Los cambios realizados por este conjuro pueden descubrirse mediante una inspección física. Por ejemplo, si usas este conjuro para añadir un sombrero a tu vestimenta, los objetos atravesarán el sombrero y cualquiera que lo toque no sentirá nada.</p><p>Para darse cuenta de que te has disfrazado, una criatura debe emplear la Acción de &amp;Reference[Study]{Estudiar} para inspeccionar tu apariencia y superar una [[/check ability=int skill=inv dc=@attributes.spell.dc]]{prueba de Inteligencia (Investigación) contra tu CD de salvación de conjuros}.</p>",
       "effects": {
         "Disguised": {
-          "name": "Disguised",
-          "description": "<p><span style=\"font-family:Signika, sans-serif\">To discern that you are disguised, a creature must take the Study action to inspect your appearance and succeed on an [[/check ability=int skill=inv]] check against your spell save DC.</span></p>"
+          "name": "Disfrazado",
+          "description": "<p><span style=\"font-family:Signika, sans-serif\">Para darse cuenta de que te has disfrazado, una criatura debe emplear la &amp;Reference[Study]{Acción de Estudiar} para inspeccionar tu apariencia y superar una [[/check ability=int skill=inv]]{prueba de Inteligencia (Investigación) contra tu CD de salvación de conjuros}.</span></p>"
         }
       }
     },
@@ -1082,8 +1082,8 @@
       "description": "<p>Choose one creature, object, or magical effect within range. Any ongoing spell of level 3 or lower on the target ends. For each ongoing spell of level 4 or higher on the target, make an ability check using your spellcasting ability (DC 10 plus that spell's level). On a successful check, the spell ends.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You automatically end a spell on the target if the spell's level is equal to or less than the level of the spell slot you use.</p>"
     },
     "phbsplDissonantW": {
-      "name": "Dissonant Whispers",
-      "description": "<p>One creature of your choice that you can see within range hears a discordant melody in its mind. The target makes a Wisdom saving throw. On a failed save, it takes 3d6 Psychic damage and must immediately use its Reaction, if available, to move as far away from you as it can, using the safest route. On a successful save, the target takes half as much damage only.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d6 for each spell slot level above 1.</p>"
+      "name": "Susurros discordantes",
+      "description": "<p>Una criatura de tu elección que puedas ver dentro del alcance oye una melodía discordante en su mente. El objetivo hace una [[/save wis dc=@attributes.spell.dc]]{tirada de salvación de Sabiduría}. Si la falla, recibirá [[/damage 3d6 psychic]]{3d6 de daño Psíquico} y deberá utilizar su Reacción inmediatamente, si es posible, para alejarse de ti tanto como pueda por la ruta más segura. Si supera la tirada, solo sufrirá la mitad de ese daño.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> El daño aumenta en [[/damage 1d6 psychic]]{1d6} por cada nivel por encima de 1 que tenga el espacio.</p>"
     },
     "phbsplDivination": {
       "name": "Divination",
@@ -1091,23 +1091,23 @@
       "materials": "incense worth 25+ GP, which the spell consumes"
     },
     "phbsplDivineFavo": {
-      "name": "Divine Favor",
-      "description": "<p>Until the spell ends, your attacks with weapons deal an extra 1d4 Radiant damage on a hit.</p>",
+      "name": "Favor divino",
+      "description": "<p>Hasta que el conjuro termine, tus ataques con armas infligen [[/damage 1d4 radiant]]{1d4 de daño Radiante} adicional si aciertan.</p>",
       "effects": {
         "Divine Favor": {
-          "name": "Divine Favor"
+          "name": "Favor divino"
         }
       }
     },
     "phbsplDivineSmit": {
-      "name": "Divine Smite",
-      "description": "<p>The target takes an extra 2d8 Radiant damage from the attack. The damage increases by 1d8 if the target is a Fiend or an Undead.</p><p><strong>Using a Higher-Level Spell Slot. </strong>The damage increases by 1d8 for each spell slot level above 1.</p>",
+      "name": "Castigo divino",
+      "description": "<p>El objetivo sufre [[/damage 2d8 radiant]]{2d8 de daño Radiante} adicional del ataque. Este daño aumenta en [[/damage 1d8 radiant]]{1d8} si el objetivo es un &amp;Reference[fiend]{Infernal} o un &amp;Reference[undead]{No muerto}.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> El daño aumenta en [[/damage 1d8 radiant]]{1d8} por cada nivel por encima de 1 que tenga el espacio.</p>",
       "activities": {
         "Unholy Creature Damage": {
-          "name": "Unholy Creature Damage"
+          "name": "Daño contra criatura impía"
         },
         "Cast": {
-          "name": "Cast"
+          "name": "Lanzar"
         }
       }
     },
@@ -1285,11 +1285,11 @@
       }
     },
     "phbsplEnsnaringS": {
-      "name": "Ensnaring Strike",
-      "description": "<p>As you hit the target, grasping vines appear on it, and it makes a Strength saving throw. A Large or larger creature has Advantage on this save. On a failed save, the target has the <span style=\"font-family:Signika, sans-serif\">&amp;Reference[restrained apply=false] </span>condition until the spell ends. On a successful save, the vines shrivel away, and the spell ends.</p><p>While Restrained, the target takes 1d6 Piercing damage at the start of each of its turns. The target or a creature within reach of it can take an action to make a [[/check ability=str skill=ath dc=@attributes.spell.dc]] check against your spell save DC. On a success, the spell ends.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d6 for each spell slot level above 1.</p>",
+      "name": "Golpe apresador",
+      "description": "<p>Al acertar al objetivo, unas enredaderas aparecerán sobre él y deberá hacer una [[/save str dc=@attributes.spell.dc]]{tirada de salvación de Fuerza}. Las criaturas Grandes o de mayor tamaño tienen Ventaja en esta tirada. Si la falla, tendrá el estado &amp;Reference[restrained]{Apresado} hasta que el conjuro termine. Si la supera, las enredaderas se marchitan y el conjuro termina.</p><p>Mientras esté apresado, el objetivo sufrirá [[/damage 1d6 piercing]]{1d6 de daño Perforante} al principio de cada uno de sus turnos. El objetivo o una criatura a su alcance puede emplear una acción para hacer una [[/check ability=str skill=ath dc=@attributes.spell.dc]]{prueba de Fuerza (Atletismo) contra tu CD de salvación de conjuros}. Si la supera, el conjuro termina.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> El daño aumenta en [[/damage 1d6 piercing]]{1d6} por cada nivel por encima de 1 que tenga el espacio.</p>",
       "activities": {
         "Start of Turn Damage": {
-          "name": "Start of Turn Damage"
+          "name": "Daño al principio del turno"
         }
       },
       "effects": {
@@ -1300,12 +1300,12 @@
       }
     },
     "phbsplEntangle00": {
-      "name": "Entangle",
-      "description": "<p>Grasping plants sprout from the ground in a 20-foot square within range. For the duration, these plants turn the ground in the area into &amp;Reference[difficultterrain]. They disappear when the spell ends.</p><p>Each creature (other than you) in the area when you cast the spell must succeed on a Strength saving throw or have the &amp;Reference[restrained apply=false] condition until the spell ends. A Restrained creature can take an action to make a [[/check ability=str skill=ath dc=@attributes.spell.dc]] check against your spell save DC. On a success, it frees itself from the grasping plants and is no longer Restrained by them.</p>",
+      "name": "Enmarañar",
+      "description": "<p>Unas plantas apresadoras surgen del suelo en un cuadrado de 20 pies (6 m) de lado dentro del alcance. Hasta que termine el conjuro, estas plantas convertirán la zona en &amp;Reference[difficultterrain]{terreno difícil} y desaparecerán cuando el conjuro termine.</p><p>Cada criatura (excepto tú) que esté en la zona cuando lances el conjuro deberá superar una [[/save str dc=@attributes.spell.dc]]{tirada de salvación de Fuerza} o tendrá el estado &amp;Reference[restrained]{Apresado} hasta que el conjuro termine. Una criatura apresada puede emplear una acción para hacer una [[/check ability=str skill=ath dc=@attributes.spell.dc]]{prueba de Fuerza (Atletismo) contra tu CD de salvación de conjuros}. Si la supera, se liberará de las plantas y dejará de estar apresada por ellas.</p>",
       "effects": {
         "Restrained": {
-          "name": "Restrained",
-          "description": "<p>A Restrained creature can take an action to make a [[/check ability=str skill=ath]] check against your spell save DC. On a success, it frees itself from the grasping plants and is no longer Restrained by them.</p>"
+          "name": "Apresado",
+          "description": "<p>Una criatura apresada puede emplear una acción para hacer una [[/check ability=str skill=ath]]{prueba de Fuerza (Atletismo) contra tu CD de salvación de conjuros}. Si la supera, se liberará de las plantas y dejará de estar apresada por ellas.</p>"
         }
       }
     },
@@ -1345,8 +1345,8 @@
       }
     },
     "phbsplExpeditiou": {
-      "name": "Expeditious Retreat",
-      "description": "<p>You take the Dash action, and until the spell ends, you can take that action again as a Bonus Action.</p>"
+      "name": "Retirada expeditiva",
+      "description": "<p>Realizas la acción de &amp;Reference[Dash]{Correr} y, hasta que el conjuro termine, puedes volver a hacerla como Acción Adicional.</p>"
     },
     "phbsplEyebite000": {
       "name": "Eyebite",
@@ -1379,22 +1379,22 @@
       "description": "<p>You convert raw materials into products of the same material. For example, you can fabricate a wooden bridge from a clump of trees, a rope from a patch of hemp, or clothes from flax or wool.</p><p>Choose raw materials that you can see within range. You can fabricate a Large or smaller object (contained within a 10-foot Cube or eight connected 5-foot Cubes) given a sufficient quantity of material. If you're working with metal, stone, or another mineral substance, however, the fabricated object can be no larger than Medium (contained within a 5-foot Cube). The quality of any fabricated objects is based on the quality of the raw materials.</p><p>Creatures and magic items can't be created by this spell. You also can't use it to create items that require a high degree of skill—such as weapons and armor—unless you have proficiency with the type of Artisan's Tools used to craft such objects.</p>"
     },
     "phbsplFaerieFire": {
-      "name": "Faerie Fire",
-      "description": "<p>Objects in a 20-foot Cube within range are outlined in blue, green, or violet light (your choice). Each creature in the Cube is also outlined if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed &amp;Reference[dimlight] in a 10-foot radius and can't benefit from the Invisible condition.</p><p>Attack rolls against an affected creature or object have Advantage if the attacker can see it.</p>",
+      "name": "Fuego feérico",
+      "description": "<p>El conjuro ilumina con luz azul, verde o violeta, a tu elección, el contorno de los objetos en un Cubo de 20 pies (6 m) de lado dentro del alcance. También se ilumina el contorno de cualquier criatura dentro del Cubo que falle una [[/save dex dc=@attributes.spell.dc]]{tirada de salvación de Destreza}. Hasta que termine el conjuro, los objetos y criaturas afectados emitirán &amp;Reference[dimlight]{luz tenue} en un radio de 10 pies (3 m) y no podrán beneficiarse del estado &amp;Reference[invisible]{Invisible}.</p><p>Las tiradas de ataque contra las criaturas u objetos afectados tendrán Ventaja si el atacante puede verlos.</p>",
       "effects": {
         "Outlined": {
-          "name": "Outlined",
-          "description": "<p>For the duration, objects and affected creatures shed &amp;Reference[dimlight] in a 10-foot radius and can’t benefit from the Invisible condition.</p><p>Attack rolls against an affected creature or object have Advantage if the attacker can see it.</p>"
+          "name": "Iluminado",
+          "description": "<p>Hasta que termine el conjuro, los objetos y criaturas afectados emitirán &amp;Reference[dimlight]{luz tenue} en un radio de 10 pies (3 m) y no podrán beneficiarse del estado &amp;Reference[invisible]{Invisible}.</p><p>Las tiradas de ataque contra las criaturas u objetos afectados tendrán Ventaja si el atacante puede verlos.</p>"
         }
       }
     },
     "phbsplFalseLife0": {
-      "name": "False Life",
-      "description": "<p>You gain 2d4 + 4 Temporary Hit Points.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You gain 5 additional Temporary Hit Points for each spell slot level above 1.</p>",
-      "materials": "a drop of alcohol",
+      "name": "Falsa vida",
+      "description": "<p>Obtienes [[/heal 2d4 + 4 temp]] puntos de golpe temporales.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> Obtienes [[/heal 5 temp]] puntos de golpe temporales adicionales por cada nivel por encima de 1 que tenga el espacio.</p>",
+      "materials": "una gota de alcohol",
       "activities": {
         "Temporary Health": {
-          "name": "Temporary Health"
+          "name": "Puntos de golpe temporales"
         }
       }
     },
@@ -1410,19 +1410,19 @@
       }
     },
     "phbsplFeatherFal": {
-      "name": "Feather Fall",
-      "description": "<p>Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If a creature lands before the spell ends, the creature takes no damage from the fall, and the spell ends for that creature.</p>",
-      "materials": "a small feather or piece of down"
+      "name": "Caída de pluma",
+      "description": "<p>Elige hasta cinco criaturas dentro del alcance que estén cayendo. La velocidad de descenso de cada objetivo se reduce a 60 pies (18 m) por asalto hasta que el conjuro termine. Si una criatura aterriza antes de que el conjuro termine, no sufrirá daño de la caída y el conjuro terminará para esa criatura.</p>",
+      "materials": "una pluma pequeña o un trozo de plumón"
     },
     "phbsplFindFamili": {
-      "name": "Find Familiar",
-      "description": "<p>You gain the service of a familiar, a spirit that takes an animal form you choose: <strong>Bat</strong>, <strong>Cat</strong>, <strong>Frog</strong>, <strong>Hawk</strong>, <strong>Lizard</strong>, <strong>Octopus</strong>, <strong>Owl</strong>, <strong>Rat</strong>, <strong>Raven</strong>, <strong>Spider</strong>, <strong>Weasel</strong>, or another Beast that has a Challenge Rating of 0. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form (see appendix B), though it is a Celestial, Fey, or Fiend (your choice) instead of a Beast. Your familiar acts independently of you, but it obeys your commands.</p><p><strong>Telepathic Connection.</strong> While your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as a Bonus Action, you can see through the familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses it has.</p><p>Finally, when you cast a spell with a range of touch, your familiar can deliver the touch. Your familiar must be within 100 feet of you, and it must take a Reaction to deliver the touch when you cast the spell.</p><p><strong>Combat.</strong> The familiar is an ally to you and your allies. It rolls its own Initiative and acts on its own turn. A familiar can't attack, but it can take other actions as normal.</p><p><strong>Disappearance of the Familiar.</strong> When the familiar drops to 0 Hit Points, it disappears. It reappears after you cast this spell again. As a Magic action, you can temporarily dismiss the familiar to a pocket dimension. Alternatively, you can dismiss it forever. As a Magic action while it is temporarily dismissed, you can cause it to reappear in an unoccupied space within 30 feet of you. Whenever the familiar drops to 0 Hit Points or disappears into the pocket dimension, it leaves behind in its space anything it was wearing or carrying.</p><p><strong>One Familiar Only.</strong> You can't have more than one familiar at a time. If you cast this spell while you have a familiar, you instead cause it to adopt a new eligible form.</p>",
-      "materials": "burning incense worth 10+ GP, which the spell consumes",
+      "name": "Hallar familiar",
+      "description": "<p>Obtienes los servicios de un familiar, un espíritu que adopta una forma animal de tu elección: araña, búho, comadreja, cuervo, gato, halcón, lagarto, murciélago, pulpo, rana, rata u otra Bestia con un Valor de desafío de 0. El familiar, que aparecerá en un espacio sin ocupar dentro del alcance, tiene el perfil de la forma elegida (consulta el capítulo «Monstruos»), aunque es un &amp;Reference[celestial]{Celestial}, &amp;Reference[fey]{Feérico} o &amp;Reference[fiend]{Infernal} (a tu elección) en vez de una &amp;Reference[beast]{Bestia}. Tu familiar actúa con independencia de ti, pero obedece tus órdenes.</p><p><strong>Conexión telepática.</strong> Mientras tu familiar esté a 100 pies (30 m) o menos de ti, puedes comunicarte con él telepáticamente. Además, como Acción Adicional, puedes ver a través de sus ojos y escuchar lo que oiga hasta el principio de tu siguiente turno, y también obtienes los beneficios de cualquier sentido especial que tenga.</p><p>Por último, cuando lances un conjuro con un alcance de toque, puedes hacer que tu familiar sea quien toque al objetivo. Tu familiar debe estar a 100 pies (30 m) o menos de ti y debe usar una Reacción para tocar al objetivo cuando lances el conjuro.</p><p><strong>Combate.</strong> El familiar se considera un aliado para tus aliados y para ti, tira su propia Iniciativa y actúa en su propio turno. Un familiar no puede atacar, pero puede realizar otras acciones de manera normal.</p><p><strong>Desaparición del familiar.</strong> Si los Puntos de golpe del familiar se reducen a 0, desaparecerá y reaparecerá después de que vuelvas a lanzar este conjuro. Como Acción de Magia, puedes hacer que el familiar se retire temporalmente a una dimensión de bolsillo. Como alternativa, puedes hacer que se desvanezca para siempre. Como Acción de Magia mientras esté desaparecido temporalmente, puedes hacer que reaparezca en un espacio sin ocupar a 30 pies (9 m) o menos de ti. Siempre que sus Puntos de golpe se reduzcan a 0 o que el familiar se retire a la dimensión de bolsillo, dejará en el espacio que ocupaba cualquier cosa que vistiera o llevase.</p><p><strong>Un solo familiar.</strong> No puedes tener más de un familiar al mismo tiempo. Si lanzas este conjuro mientras tengas un familiar, harás que adopte una nueva forma que cumpla los requisitos.</p>",
+      "materials": "incienso para quemar que valga al menos 10 po, que se consume como parte del con￾juro",
       "activities": {
         "summon": {
           "profiles": {
             "CR 0 Beast": {
-              "name": "CR 0 Beast"
+              "name": "Bestia con Valor de desafío 0"
             }
           }
         }
@@ -1546,8 +1546,8 @@
       }
     },
     "phbsplFogCloud00": {
-      "name": "Fog Cloud",
-      "description": "<p>You create a 20-foot-radius Sphere of fog centered on a point within range. The Sphere is &amp;Reference[heavilyobscured]. It lasts for the duration or until a strong wind (such as one created by <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplGustofWind]{Gust of Wind}</em>) disperses it.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The fog's radius increases by 20 feet for each spell slot level above 1.</p>"
+      "name": "Nube de oscurecimiento",
+      "description": "<p>Creas una Esfera de niebla de 20 pies (6 m) de radio centrada en un punto dentro del alcance. La Esfera está &amp;Reference[heavilyobscured]{muy oscura} y dura hasta que el conjuro termine o hasta que la disperse un viento fuerte (por ejemplo, el que crea <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplGustofWind]</em>).</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> El radio de la niebla aumenta en 20 pies (6 m) por cada nivel por encima de 1 que tenga el espacio.</p>"
     },
     "phbsplForbiddanc": {
       "name": "Forbiddance",
@@ -1680,19 +1680,19 @@
       }
     },
     "phbsplGoodberry0": {
-      "name": "Goodberry",
-      "description": "<p>@UUID[Compendium.dnd5e.spells24.Item.phbutlMagicalBer]{Ten berries} appear in your hand and are infused with magic for the duration. A creature can take a Bonus Action to eat one berry. Eating a berry restores 1 Hit Point, and the berry provides enough nourishment to sustain a creature for one day.</p><p>Uneaten berries disappear when the spell ends.</p>",
-      "materials": "a sprig of mistletoe",
+      "name": "Buenas bayas",
+      "description": "<p>@UUID[Compendium.dnd5e.spells24.Item.phbutlMagicalBer]{Diez bayas} aparecen en tu mano y están impregnadas de magia hasta que termine el conjuro. Una criatura puede usar una Acción Adicional para comerse una baya, lo que le permite recuperar [[/heal 1]] punto de golpe. Además, la baya proporciona alimento suficiente como para mantener a una criatura durante 1 día.</p><p>Las bayas que no se consuman desaparecerán cuando el conjuro termine.</p>",
+      "materials": "una ramita de muérdago",
       "activities": {
         "Create Berries": {
-          "name": "Create Berries"
+          "name": "Crear bayas"
         }
       }
     },
     "phbsplGrease0000": {
-      "name": "Grease",
-      "description": "<p>Nonflammable grease covers the ground in a 10-foot square centered on a point within range and turns it into &amp;Reference[difficultterrain] for the duration.</p><p>When the grease appears, each creature standing in its area must succeed on a Dexterity saving throw or have the &amp;Reference[prone] condition. A creature that enters the area or ends its turn there must also succeed on that save or fall Prone.</p>",
-      "materials": "a bit of pork rind or butter"
+      "name": "Grasa",
+      "description": "<p>Una grasa no inflamable cubre una zona cuadrada del suelo de 10 pies (3 m) de lado centrada en un punto dentro del alcance y que la convierte en &amp;Reference[difficultterrain]{terreno difícil} hasta que termina el conjuro.</p><p>Cuando aparezca la grasa, las criaturas que haya en esa zona deberán superar una [[/save dex dc=@attributes.spell.dc]]{tirada de salvación de Destreza} o tendrán el estado &amp;Reference[prone]{Derribado}. Una criatura que entre en la zona o termine su turno ahí deberá superar esa tirada de salvación o caerá Derribada.</p>",
+      "materials": "un poco de piel de cerdo o mantequilla"
     },
     "phbsplGreaterInv": {
       "name": "Greater Invisibility",
@@ -1778,12 +1778,12 @@
       }
     },
     "phbsplGuidingBol": {
-      "name": "Guiding Bolt",
-      "description": "<p>You hurl a bolt of light toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 4d6 Radiant damage, and the next attack roll made against it before the end of your next turn has Advantage.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d6 for each spell slot level above 1.</p>",
+      "name": "Saeta guía",
+      "description": "<p>Lanzas un rayo de luz hacia una criatura dentro del alcance. Haz un ataque de conjuro a distancia contra el objetivo. Si acierta, el objetivo recibirá [[/damage 4d6 radiant]]{4d6 de daño Radiante} y la siguiente tirada de ataque contra él antes del final de tu siguiente turno tendrá &amp;Reference[Advantage]{Ventaja}.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> El daño aumenta en [[/damage 1d6 radiant]]{1d6 de daño Radiante} por cada nivel por encima de 1 que tenga el espacio.</p>",
       "effects": {
         "Guiding Bolt": {
-          "name": "Guiding Bolt",
-          "description": "<p><span style=\"font-family:Signika, sans-serif\">The next attack roll made against the target before the end of your next turn has Advantage.</span></p>"
+          "name": "Saeta guía",
+          "description": "<p><span style=\"font-family:Signika, sans-serif\">La siguiente tirada de ataque contra el objetivo antes del final de tu siguiente turno tendrá Ventaja.</span></p>"
         }
       }
     },
@@ -1834,8 +1834,8 @@
       "description": "<p>Choose a creature that you can see within range. Positive energy washes through the target, restoring 70 Hit Points. This spell also ends the &amp;Reference[Blinded], &amp;Reference[Deafened], and &amp;Reference[Poisoned] conditions on the target.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The healing increases by 10 for each spell slot level above 6.</p>"
     },
     "phbsplHealingWor": {
-      "name": "Healing Word",
-      "description": "<p>A creature of your choice that you can see within range regains Hit Points equal to 2d4 plus your spellcasting ability modifier.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The healing increases by 2d4 for each spell slot level above 1.</p>"
+      "name": "Palabra de curación",
+      "description": "<p>Una criatura de tu elección que puedas ver dentro del alcance recupera una cantidad de puntos de golpe igual a [[/heal 2d4]] más tu modificador por aptitud mágica.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> La curación aumenta en [[/heal 2d4]] por cada nivel por encima de 1 que tenga el espacio.</p>"
     },
     "phbsplHeatMetal0": {
       "name": "Heat Metal",
@@ -1860,8 +1860,8 @@
       }
     },
     "phbsplHellishReb": {
-      "name": "Hellish Rebuke",
-      "description": "<p>The creature that damaged you is momentarily surrounded by green flames. It makes a Dexterity saving throw, taking 2d10 Fire damage on a failed save or half as much damage on a successful one.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d10 for each spell slot level above 1.</p>"
+      "name": "Reprensión infernal",
+      "description": "<p>La criatura que te ha dañado se ve rodeada momentáneamente por unas llamas verdes y hará una [[/save dex dc=@attributes.spell.dc]]{tirada de salvación de Destreza}; sufrirá [[/damage 2d10 fire]]{2d10 de daño Fuego} si la falla o la mitad del daño si la supera.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> El daño aumenta en [[/damage 1d10 fire]]{1d10 de daño Fuego} por cada nivel por encima de 1 que tenga el espacio.</p>"
     },
     "phbsplHeroesFeas": {
       "name": "Heroes' Feast",
@@ -1884,55 +1884,55 @@
       }
     },
     "phbsplHeroism000": {
-      "name": "Heroism",
-      "description": "<p>A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to the Frightened condition and gains Temporary Hit Points equal to your spellcasting ability modifier at the start of each of its turns.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can target one additional creature for each spell slot level above 1.</p>",
+      "name": "Heroísmo",
+      "description": "<p>Insuflas valor a una criatura voluntaria a la que toques. Hasta que el conjuro termine, la criatura es inmune al estado &amp;Reference[frightened]{Asustado} y obtiene una cantidad de puntos de golpe temporales igual a tu modificador por aptitud mágica al principio de cada uno de sus turnos.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> Puedes hacer objetivo a una criatura adicional por cada nivel por encima de 1 que tenga el espacio.</p>",
       "effects": {
         "Bravery": {
-          "name": "Bravery",
-          "description": "<p>The creature is immune to the Frightened condition and gains Temporary Hit Points equal to your spellcasting ability modifier at the start of each of its turns.</p>"
+          "name": "Valentía",
+          "description": "<p>La criatura es inmune al estado &amp;Reference[frightened]{Asustado} y obtiene una cantidad de puntos de golpe temporales igual a tu modificador por aptitud mágica al principio de cada uno de sus turnos.</p>"
         }
       }
     },
     "phbsplHex0000000": {
-      "name": "Hex",
-      "description": "<p>You place a curse on a creature that you can see within range. Until the spell ends, you deal an extra 1d6 Necrotic damage to the target whenever you hit it with an attack roll. Also, choose one ability when you cast the spell. The target has Disadvantage on ability checks made with the chosen ability.</p><p>If the target drops to 0 Hit Points before this spell ends, you can take a Bonus Action on a later turn to curse a new creature.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Your Concentration can last longer with a spell slot of level 2 (up to 4 hours), 3–4 (up to 8 hours), or 5+ (24 hours).</p>",
-      "materials": "the petrified eye of a newt",
+      "name": "Maleficio",
+      "description": "<p>Impones una maldición a una criatura que puedas ver dentro del alcance. Hasta que el conjuro termine, infliges [[/damage 1d6 necrotic]]{1d6 de daño Necrótico} adicional al objetivo siempre que le aciertes con una tirada de ataque. Además, elige una característica cuando lances el conjuro. El objetivo tendrá &amp;Reference[disadvantage]{Desventaja} en las pruebas que haga con la característica elegida.</p><p>Si los Puntos de golpe del objetivo se reducen a 0 antes de que el conjuro termine, puedes usar una Acción Adicional en un turno posterior para maldecir a una nueva criatura.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> Tu concentración puede durar más si usas un espacio de conjuro de nivel 2 (hasta 4 horas), 3 o 4 (hasta 8 horas) o 5 o más (24 horas).</p>",
+      "materials": "el ojo petrificado de un tritón",
       "activities": {
         "Bonus Hex Damage": {
-          "name": "Bonus Hex Damage",
-          "condition": "whenever you hit the target with an attack roll"
+          "name": "Daño adicional de Maleficio",
+          "condition": "cada vez que aciertes al objetivo con una tirada de ataque"
         },
         "Place Curse": {
-          "name": "Place Curse"
+          "name": "Imponer maldición"
         },
         "Curse New Creature": {
-          "name": "Curse New Creature"
+          "name": "Maldecir a una nueva criatura"
         }
       },
       "effects": {
         "Hexed Strength": {
-          "name": "Hexed Strength",
-          "description": "<p>The target has Disadvantage on ability checks made with the chosen ability.</p>"
+          "name": "Fuerza maldecida",
+          "description": "<p>El objetivo tiene Desventaja en las pruebas de característica que haga con la característica elegida.</p>"
         },
         "Hexed Dexterity": {
-          "name": "Hexed Dexterity",
-          "description": "<p>The target has Disadvantage on ability checks made with the chosen ability.</p>"
+          "name": "Destreza maldecida",
+          "description": "<p>El objetivo tiene Desventaja en las pruebas de característica que haga con la característica elegida.</p>"
         },
         "Hexed Constitution": {
-          "name": "Hexed Constitution",
-          "description": "<p>The target has Disadvantage on ability checks made with the chosen ability.</p>"
+          "name": "Constitución maldecida",
+          "description": "<p>El objetivo tiene Desventaja en las pruebas de característica que haga con la característica elegida.</p>"
         },
         "Hexed Intelligence": {
-          "name": "Hexed Intelligence",
-          "description": "<p>The target has Disadvantage on ability checks made with the chosen ability.</p>"
+          "name": "Inteligencia maldecida",
+          "description": "<p>El objetivo tiene Desventaja en las pruebas de característica que haga con la característica elegida.</p>"
         },
         "Hexed Wisdom": {
-          "name": "Hexed Wisdom",
-          "description": "<p>The target has Disadvantage on ability checks made with the chosen ability.</p>"
+          "name": "Sabiduría maldecida",
+          "description": "<p>El objetivo tiene Desventaja en las pruebas de característica que haga con la característica elegida.</p>"
         },
         "Hexed Charisma": {
-          "name": "Hexed Charisma",
-          "description": "<p>The target has Disadvantage on ability checks made with the chosen ability.</p>"
+          "name": "Carisma maldecido",
+          "description": "<p>El objetivo tiene Desventaja en las pruebas de característica que haga con la característica elegida.</p>"
         }
       }
     },
@@ -1981,24 +1981,24 @@
       }
     },
     "phbsplHuntersMar": {
-      "name": "Hunter's Mark",
-      "description": "<p>You magically mark one creature you can see within range as your quarry. Until the spell ends, you deal an extra [[/damage]] damage to the target whenever you hit it with an attack roll. You also have Advantage on any [[/check ability=wis skill=prc]] or [[/check ability=wis skill=sur]] check you make to find it.</p><p>If the target drops to 0 Hit Points before this spell ends, you can take a Bonus Action to move the mark to a new creature you can see within range.</p><p><strong>Using a Higher-Level Spell Slot.</strong> Your Concentration can last longer with a spell slot of level 3–4 (up to 8 hours) or 5+ (up to 24 hours).</p>",
+      "name": "Marca del cazador",
+      "description": "<p>Marcas mágicamente a una criatura que puedas ver dentro del alcance como tu presa. Hasta que el conjuro termine, infliges [[/damage 1d6 force]]{1d6 de daño Fuerza} adicional al objetivo siempre que le aciertes con una tirada de ataque. También tendrás &amp;Reference[Advantage]{Ventaja} en cualquier [[/check ability=wis skill=prc]]{prueba de Sabiduría (Percepción)} o [[/check ability=wis skill=sur]]{prueba de Sabiduría (Supervivencia)} que realices para buscarlo.</p><p>Si los Puntos de golpe del objetivo se reducen a 0 antes de que el conjuro termine, puedes emplear una Acción Adicional para transferir la marca a una nueva criatura que puedas ver dentro del alcance.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> Tu concentración puede durar más si usas un espacio de conjuro de nivel 3 o 4 (hasta 8 horas) o 5 o más (hasta 24 horas).</p>",
       "activities": {
         "Bonus Mark Damage": {
-          "name": "Bonus Mark Damage"
+          "name": "Daño adicional de Marca del cazador"
         },
         "Mark Creature": {
-          "name": "Mark Creature"
+          "name": "Marcar criatura"
         },
         "Move Mark": {
-          "name": "Move Mark",
-          "condition": "when the currently marked target drops to 0 Hit Points"
+          "name": "Transferir marca",
+          "condition": "cuando el objetivo marcado actualmente se reduzca a 0 Puntos de golpe"
         }
       },
       "effects": {
         "Hunter's Mark": {
-          "name": "Hunter's Mark",
-          "description": "<p>Until the spell ends, the caster deals an extra [[/damage 1d6 force]] damage to the target whenever they hit it with an attack roll.</p>"
+          "name": "Marca del cazador",
+          "description": "<p>Hasta que el conjuro termine, infliges [[/damage 1d6 force]]{1d6 de daño Fuerza} adicional al objetivo siempre que le aciertes con una tirada de ataque.</p>"
         }
       }
     },
@@ -2014,12 +2014,12 @@
       }
     },
     "phbsplIceKnife00": {
-      "name": "Ice Knife",
-      "description": "<p>You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of it must succeed on a Dexterity saving throw or take 2d6 Cold damage.</p><p><strong>Using a Higher-Level Spell Slot. </strong>The Cold damage increases by 1d6 for each spell slot level above 1.</p>",
-      "materials": "a drop of water or a piece of ice",
+      "name": "Cuchillo de hielo",
+      "description": "<p>Creas una esquirla de hielo y se la lanzas a una criatura dentro del alcance. Haz un ataque de conjuro a distancia contra el objetivo. Si acierta, el objetivo recibe [[/damage 1d10 piercing]]{1d10 de daño Perforante}. Acierte o falle, el fragmento explotará. El objetivo y todas las criaturas a 5 pies (1,5 m) o menos de él deberán superar una [[/save dex dc=@attributes.spell.dc]]{tirada de salvación de Destreza} o recibirán [[/damage 2d6 cold]]{2d6 de daño Frío}.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> El daño de Frío aumenta en [[/damage 1d6 cold]]{1d6 de daño Frío} por cada nivel por encima de 1 que tenga el espacio.</p>",
+      "materials": "una gota de agua o un trozo de hielo",
       "activities": {
         "Shard Explosion": {
-          "name": "Shard Explosion"
+          "name": "Explosión de la esquirla"
         }
       }
     },
@@ -2029,14 +2029,14 @@
       "materials": "a mitten"
     },
     "phbsplIdentify00": {
-      "name": "Identify",
-      "description": "<p>You touch an object throughout the spell's casting. If the object is a magic item or some other magical object, you learn its properties and how to use them, whether it requires Attunement, and how many charges it has, if any. You learn whether any ongoing spells are affecting the item and what they are. If the item was created by a spell, you learn that spell's name.</p><p>If you instead touch a creature throughout the casting, you learn which ongoing spells, if any, are currently affecting it.</p>",
-      "materials": "a pearl worth 100+ GP"
+      "name": "Identificar",
+      "description": "<p>Tocas un objeto durante el lanzamiento del conjuro. Si se trata de un objeto mágico o de un objeto imbuido de magia, averiguarás sus propiedades y cómo usarlas, si hace falta sintonizarse con él y cuántas cargas tiene, si corresponde. Si hay conjuros activos que afecten al objeto, sabrás cuáles son. Si el objeto se creó mediante un conjuro, averiguarás su nombre.</p><p>Si tocas a una criatura en lugar de un objeto, averiguarás qué conjuros activos le afectan en ese momento, si hay alguno.</p>",
+      "materials": "una perla que valga al menos 100 po"
     },
     "phbsplIllusorySc": {
-      "name": "Illusory Script",
-      "description": "<p>You write on parchment, paper, or another suitable material and imbue it with an illusion that lasts for the duration. To you and any creatures you designate when you cast the spell, the writing appears normal, seems to be written in your hand, and conveys whatever meaning you intended when you wrote the text. To all others, the writing appears as if it were written in an unknown or magical script that is unintelligible. Alternatively, the illusion can alter the meaning, handwriting, and language of the text, though the language must be one you know.</p><p>If the spell is dispelled, the original script and the illusion both disappear.</p><p>A creature that has &amp;Reference[truesight] can read the hidden message.</p>",
-      "materials": "ink worth 10+ GP, which the spell consumes"
+      "name": "Texto ilusorio",
+      "description": "<p>Escribes en pergamino, papel u otro material adecuado y lo impregnas con una ilusión hasta que termine el conjuro. Para ti y las demás criaturas que designes cuando lanzas el conjuro, el texto parece normal, escrito con tu letra, y transmite el significado que pretendieras al escribirlo. Para los demás, el texto parece escrito en letra mágica o desconocida y es ininteligible. Como alternativa, la ilusión puede modificar el significado, la caligrafía y el idioma de un texto, aunque el idioma debe ser uno que conozcas.</p><p>Si el conjuro se disipa, desaparecerán tanto el escrito original como la ilusión.</p><p>Una criatura con &amp;Reference[truesight]{Visión verdadera} puede leer el mensaje oculto.</p>",
+      "materials": "tinta que valga al menos 10 po, que se consume como parte del conjuro"
     },
     "phbsplImprisonme": {
       "name": "Imprisonment",
@@ -2078,8 +2078,8 @@
       }
     },
     "phbsplInflictWou": {
-      "name": "Inflict Wounds",
-      "description": "<p>A creature you touch makes a Constitution saving throw, taking 2d10 Necrotic damage on a failed save or half as much damage on a successful one.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d10 for each spell slot level above 1.</p>"
+      "name": "Infligir heridas",
+      "description": "<p>Una criatura a la que toques hace una [[/save con dc=@attributes.spell.dc]]{tirada de salvación de Constitución}; sufrirá [[/damage 2d10 necrotic]]{2d10 de daño Necrótico} si la falla o la mitad del daño si la supera.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> El daño aumenta en [[/damage 1d10 necrotic]]{1d10 de daño Necrótico} por cada nivel por encima de 1 que tenga el espacio.</p>"
     },
     "phbsplInsectPlag": {
       "name": "Insect Plague",
@@ -2098,13 +2098,13 @@
       }
     },
     "phbsplJump000000": {
-      "name": "Jump",
-      "description": "<p>You touch a willing creature. Once on each of its turns until the spell ends, that creature can jump up to 30 feet by spending 10 feet of movement.</p><p><strong>Using a Higher-Level Spell Slot.</strong>You can target one additional creature for each spell slot level above 1.</p>",
-      "materials": "a grasshopper’s hind leg",
+      "name": "Salto",
+      "description": "<p>Tocas a una criatura voluntaria. Una vez en cada uno de sus turnos hasta que el conjuro termine, la criatura puede saltar hasta 30 pies (9 m) usando 10 pies (3 m) de movimiento.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> Puedes hacer objetivo a una criatura adicional por cada nivel por encima de 1 que tenga el espacio.</p>",
+      "materials": "una pata trasera de saltamontes",
       "effects": {
         "Jump": {
-          "name": "Jump",
-          "description": "<p>Once on each of its turns until the spell ends, that creature can jump up to 30 feet by spending 10 feet of movement.</p>"
+          "name": "Salto",
+          "description": "<p>Una vez en cada uno de sus turnos hasta que el conjuro termine, la criatura puede saltar hasta 30 pies (9 m) usando 10 pies (3 m) de movimiento.</p>"
         }
       }
     },
@@ -2176,24 +2176,24 @@
       "materials": "a forked twig"
     },
     "phbsplLongstride": {
-      "name": "Longstrider",
-      "description": "<p>You touch a creature. The target's Speed increases by 10 feet until the spell ends.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can target one additional creature for each spell slot level above 1.</p>",
-      "materials": "a pinch of dirt",
+      "name": "Zancada prodigiosa",
+      "description": "<p>Tocas a una criatura y su Velocidad aumenta en 10 pies (3 m) hasta que el conjuro termine.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> Puedes hacer objetivo a una criatura adicional por cada nivel por encima de 1 que tenga el espacio.</p>",
+      "materials": "una pizca de tierra",
       "effects": {
         "Longstrider": {
-          "name": "Longstrider",
-          "description": "<p>The target’s Speed increases by 10 feet until the spell ends.</p>"
+          "name": "Zancada prodigiosa",
+          "description": "<p>La Velocidad del objetivo aumenta en 10 pies (3 m) hasta que el conjuro termine.</p>"
         }
       }
     },
     "phbsplMageArmor0": {
-      "name": "Mage Armor",
-      "description": "<p>You touch a willing creature who isn't wearing armor. Until the spell ends, the target's base AC becomes 13 plus its Dexterity modifier. The spell ends early if the target dons armor.</p>",
-      "materials": "a piece of cured leather",
+      "name": "Armadura de mago",
+      "description": "<p>Tocas a una criatura voluntaria que no lleve armadura. Hasta que el conjuro termine, la CA base del objetivo pasa a ser de 13 más su modificador por Destreza. El conjuro termina antes si el objetivo se pone una armadura.</p>",
+      "materials": "un trozo de cuero curtido",
       "effects": {
         "Mage Armor": {
-          "name": "Mage Armor",
-          "description": "<p>The target's base AC becomes 13 + its Dexterity modifier.</p>"
+          "name": "Armadura de mago",
+          "description": "<p>La CA base del objetivo pasa a ser de 13 más su modificador por Destreza.</p>"
         }
       }
     },
@@ -2235,8 +2235,8 @@
       }
     },
     "phbsplMagicMissi": {
-      "name": "Magic Missile",
-      "description": "<p>You create three glowing darts of magical force. Each dart strikes a creature of your choice that you can see within range. A dart deals 1d4 + 1 Force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The spell creates one more dart for each spell slot level above 1.</p><p>[[2 + @item.level]]{Level [[lookup @item.level]] darts}</p>"
+      "name": "Proyectil mágico",
+      "description": "<p>Creas tres dardos brillantes de fuerza mágica y cada uno de ellos golpea a una criatura de tu elección a la que puedas ver dentro del alcance. Cada dardo inflige [[/damage 1d4 + 1 force]]{1d4 + 1 de daño Fuerza} al objetivo. Todos los dardos aciertan a la vez y puedes dirigirlos para que acierten a una sola criatura o a varias.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> El conjuro crea un dardo adicional por cada nivel por encima de 1 que tenga el espacio.</p><p>[[2 + @item.level]]{Dardos de nivel [[lookup @item.level]]}</p>"
     },
     "phbsplMagicMouth": {
       "name": "Magic Mouth",
@@ -2755,8 +2755,8 @@
       }
     },
     "phbsplPurifyFood": {
-      "name": "Purify Food and Drink",
-      "description": "<p>You remove poison and rot from nonmagical food and drink in a 5-foot-radius Sphere centered on a point within range.</p>"
+      "name": "Purificar comida y bebida",
+      "description": "<p>Eliminas el veneno y la podredumbre de la comida y bebida no mágicas en una Esfera de 5 pies (1,5 m) de radio centrada en un punto dentro del alcance.</p>"
     },
     "phbsplRaiseDead0": {
       "name": "Raise Dead",
@@ -2826,8 +2826,8 @@
       }
     },
     "phbsplRayofSickn": {
-      "name": "Ray of Sickness",
-      "description": "<p>You shoot a greenish ray at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 Poison damage and has the &amp;Reference[poisoned] condition until the end of your next turn.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d8 for each spell slot level above 1.</p>"
+      "name": "Rayo nauseabundo",
+      "description": "<p>Disparas un rayo verduzco hacia una criatura dentro del alcance. Haz un ataque de conjuro a distancia contra el objetivo. Si acierta, el objetivo sufrirá [[/damage 2d8 poison]]{2d8 de daño Veneno} y tendrá el estado &amp;Reference[poisoned]{Envenenado} hasta el final de tu siguiente turno.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> El daño aumenta en [[/damage 1d8 poison]]{1d8 de daño Veneno} por cada nivel por encima de 1 que tenga el espacio.</p>"
     },
     "phbsplRegenerate": {
       "name": "Regenerate",
@@ -3001,23 +3001,23 @@
       }
     },
     "phbsplSearingSmi": {
-      "name": "Searing Smite",
-      "description": "<p>As you hit the target, it takes an extra 1d6 Fire damage from the attack. At the start of each of its turns until the spell ends, the target takes 1d6 Fire damage and then makes a Constitution saving throw. On a failed save, the spell continues. On a successful save, the spell ends.</p><p><strong>Using a Higher-Level Spell Slot. </strong>All the damage increases by 1d6 for each spell slot level above 1.</p>",
+      "name": "Castigo abrasador",
+      "description": "<p>Al golpear al objetivo, sufre [[/damage 1d6 fire]]{1d6 de daño Fuego} adicional del ataque. Al principio de cada uno de sus turnos hasta que el conjuro termine, el objetivo sufrirá [[/damage 1d6 fire]]{1d6 de daño Fuego} y luego hará una [[/save con dc=@attributes.spell.dc]]{tirada de salvación de Constitución}. Si la falla, el conjuro seguirá activo. Si la supera, el conjuro terminará.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> Todo el daño aumenta en [[/damage 1d6 fire]]{1d6 de daño Fuego} por cada nivel por encima de 1 que tenga el espacio.</p>",
       "activities": {
         "Start of Turn Save": {
-          "name": "Start of Turn Save"
+          "name": "Tirada de salvación al principio del turno"
         },
         "Damage": {
-          "name": "Damage"
+          "name": "Daño"
         }
       },
       "effects": {
         "Seared": {
-          "name": "Seared",
-          "description": "<p>At the start of each of its turns until the spell ends, the target takes [[/damage 1d6 type=fire]] damage and then makes a [[/save ability=con]] saving throw. On a failed save, the spell continues. On a successful save, the spell ends.</p>"
+          "name": "Quemado",
+          "description": "<p>Al principio de cada uno de sus turnos hasta que el conjuro termine, el objetivo sufrirá [[/damage 1d6 fire]]{1d6 de daño Fuego} y luego hará una [[/save con dc=@attributes.spell.dc]]{tirada de salvación de Constitución}. Si la falla, el conjuro seguirá activo. Si la supera, el conjuro terminará.</p>"
         }
       }
-    },
+},
     "phbsplSeeInvisib": {
       "name": "See Invisibility",
       "description": "<p>For the duration, you see creatures and objects that have the &amp;Reference[invisible apply=false] condition as if they were visible, and you can see into the Ethereal Plane. Creatures and objects there appear ghostly.</p>",
@@ -3073,23 +3073,23 @@
       "materials": "a chip of mica"
     },
     "phbsplShield0000": {
-      "name": "Shield",
-      "description": "<p>An imperceptible barrier of magical force protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMagicMissi]{Magic Missile}</em>.</p>",
+      "name": "Escudo",
+      "description": "<p>Una barrera imperceptible de fuerza mágica te protege. Hasta el principio de tu siguiente turno, tienes un bonificador de +5 a la CA, incluido contra el ataque al que reacciona, y no recibes ningún daño del conjuro <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplMagicMissi]{Proyectil mágico}</em>.</p>",
       "effects": {
         "Imperceptible Barrier": {
-          "name": "Imperceptible Barrier",
-          "description": "<p>Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from <em>Magic Missile</em>.</p>"
+          "name": "Barrera imperceptible",
+          "description": "<p>Hasta el principio de tu siguiente turno, tienes un bonificador de +5 a la CA, incluido contra el ataque al que reacciona, y no recibes ningún daño del conjuro <em>Proyectil mágico</em>.</p>"
         }
       }
     },
     "phbsplShieldofFa": {
-      "name": "Shield of Faith",
-      "description": "<p>A shimmering field surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.</p>",
-      "materials": "a prayer scroll",
+      "name": "Escudo de fe",
+      "description": "<p>Un campo titilante envuelve a una criatura de tu elección dentro del alcance y le otorga un bonificador de +2 a la CA hasta que el conjuro termine.</p>",
+      "materials": "un pergamino de plegarias",
       "effects": {
         "Shimmering Field": {
-          "name": "Shimmering Field",
-          "description": "<p>The target gains a +2 bonus to AC for the duration.</p>"
+          "name": "Campo titilante",
+          "description": "<p>El objetivo obtiene un bonificador de +2 a la CA hasta que el conjuro termine.</p>"
         }
       }
     },
@@ -3163,9 +3163,9 @@
       }
     },
     "phbsplSilentImag": {
-      "name": "Silent Image",
-      "description": "<p>You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 15-foot Cube. The image appears at a spot within range and lasts for the duration. The image is purely visual; it isn't accompanied by sound, smell, or other sensory effects.</p><p>As a Magic action, you can cause the image to move to any spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking.</p><p>Physical interaction with the image reveals it to be an illusion, since things can pass through it. A creature that takes a Study action to examine the image can determine that it is an illusion with a successful [[/check ability=int skill=inv dc=@attributes.spell.dc]] check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image.</p>",
-      "materials": "a bit of fleece"
+      "name": "Imagen silenciosa",
+      "description": "<p>Creas una imagen de un objeto, una criatura u otro tipo de fenómeno visible cuyas dimensiones no excedan las de un Cubo de 15 pies (4,5 m) de lado. La imagen aparece en un sitio dentro del alcance y se mantiene hasta el final del conjuro. La imagen es solamente visual; no está acompañada de sonido, olor u otros efectos sensoriales.</p><p>Como Acción de Magia, puedes mover la imagen a cualquier sitio dentro del alcance. Al cambiarla de sitio, puedes alterar su apariencia de forma que sus movimientos parezcan naturales. Por ejemplo, si creas la imagen de una criatura y la mueves, puedes alterarla de forma que parezca estar andando.</p><p>La interacción física con la imagen revela que es una ilusión, ya que las cosas pueden atravesarla. Si una criatura emplea una Acción de &amp;Reference[Study]{Estudiar} para examinar la imagen, puede determinar que es una ilusión si supera una [[/check ability=int skill=inv dc=@attributes.spell.dc]]{prueba de Inteligencia (Investigación) contra tu CD de salvación de conjuros}. Si la criatura descubre que la imagen es una ilusión, podrá ver a través de ella.</p>",
+      "materials": "un poco de lana"
     },
     "phbsplSimulacrum": {
       "name": "Simulacrum",
@@ -3178,13 +3178,13 @@
       }
     },
     "phbsplSleep00000": {
-      "name": "Sleep",
-      "description": "<p>Each creature of your choice in a 5-foot-radius Sphere centered on a point within range must succeed on a Wisdom saving throw or have the &amp;Reference[incapacitated apply=false] condition until the end of its next turn, at which point it must repeat the save. If the target fails the second save, the target has the &amp;Reference[unconscious] condition for the duration. The spell ends on a target if it takes damage or someone within 5 feet of it takes an action to shake it out of the spell's effect.</p><p>Creatures that don't sleep, such as elves, or that have Immunity to the Exhaustion condition automatically succeed on saves against this spell.</p>",
-      "materials": "a pinch of sand or rose petals",
+      "name": "Dormir",
+      "description": "<p>Todas las criaturas de tu elección en una Esfera de 5 pies (1,5 m) de radio centrada en un punto dentro del alcance deben superar una [[/save wis dc=@attributes.spell.dc]]{tirada de salvación de Sabiduría} o tendrán el estado &amp;Reference[incapacitated]{Incapacitado} hasta el final de su siguiente turno, momento en el que deberán repetir la tirada de salvación. Si un objetivo falla la segunda tirada, tendrá el estado &amp;Reference[unconscious]{Inconsciente} hasta que termine el conjuro. El conjuro termina sobre un objetivo si recibe daño o si alguien a 5 pies (1,5 m) o menos de él emplea una acción para zarandearlo y poner fin al efecto del conjuro.</p><p>Las criaturas que no duermen, como los elfos, o que tengan inmunidad al estado de &amp;Reference[exhaustion]{Cansancio} superan automáticamente las tiradas de salvación contra este conjuro.</p>",
+      "materials": "una pizca de arena o pétalos de rosa",
       "effects": {
         "Sleeping": {
-          "name": "Sleeping",
-          "description": "<p>The target has the &amp;Reference[incapacitated apply=false] condition until the end of its next turn, at which point it must repeat the save. If the target fails the second save, the target has the &amp;Reference[unconscious] condition for the duration. The spell ends on a target if it takes damage or someone within 5 feet of it takes an action to shake it out of the spell’s effect.</p>"
+          "name": "Dormido",
+          "description": "<p>El objetivo tiene el estado &amp;Reference[incapacitated]{Incapacitado} hasta el final de su siguiente turno, momento en el que deberá repetir la tirada de salvación. Si el objetivo falla la segunda tirada, tendrá el estado &amp;Reference[unconscious]{Inconsciente} hasta que termine el conjuro. El conjuro termina sobre un objetivo si recibe daño o si alguien a 5 pies (1,5 m) o menos de él emplea una acción para zarandearlo y poner fin al efecto del conjuro.</p>"
         }
       }
     },
@@ -3218,11 +3218,11 @@
       }
     },
     "phbsplSpeakwithA": {
-      "name": "Speak with Animals",
-      "description": "<p>For the duration, you can comprehend and verbally communicate with Beasts, and you can use any of the Influence action's skill options with them.</p><p>Most Beasts have little to say about topics that don't pertain to survival or companionship, but at minimum, a Beast can give you information about nearby locations and monsters, including whatever it has perceived within the past day.</p>",
+      "name": "Hablar con los animales",
+      "description": "<p>Hasta que termine el conjuro, puedes comprender y comunicarte verbalmente con bestias y usar con ellas cualquiera de las opciones de la acción de Influir.</p><p>La mayoría de bestias tienen poco que decir en cuestiones que no tengan que ver con la supervivencia o la compañía, pero como mínimo podrán proporcionarte información sobre los lugares y monstruos cercanos, incluyendo lo que hayan percibido en el último día.</p>",
       "effects": {
         "Bestial Communication": {
-          "name": "Bestial Communication"
+          "name": "Comunicación bestial"
         }
       }
     },
@@ -3451,13 +3451,13 @@
       }
     },
     "phbsplTashasHide": {
-      "name": "Hideous Laughter",
-      "description": "<p>One creature of your choice that you can see within range makes a Wisdom saving throw. On a failed save, it has the &amp;Reference[prone apply=false] and &amp;Reference[incapacitated apply=false] conditions for the duration. During that time, it laughs uncontrollably if it's capable of laughter, and it can't end the Prone condition on itself.</p><p>At the end of each of its turns and each time it takes damage, it makes another [[/save ability=wis dc=@attributes.spell.dc]] saving throw. The target has Advantage on the save if the save is triggered by damage. On a successful save, the spell ends.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can target one additional creature for each spell slot level about 1.</p>",
-      "materials": "a tart and a feather",
+      "name": "Risa horrible",
+      "description": "<p>Una criatura de tu elección que puedas ver dentro del alcance realiza una [[/save wis dc=@attributes.spell.dc]]{tirada de salvación de Sabiduría}. Si la falla, tendrá los estados &amp;Reference[prone]{Derribado} e &amp;Reference[incapacitated]{Incapacitado} hasta que el conjuro termine. Durante ese tiempo, se reirá de forma incontrolable si tiene la capacidad de reírse y no podrá poner fin a su estado de Derribado.</p><p>Al final de cada uno de sus turnos y cada vez que reciba daño, realizará otra [[/save wis dc=@attributes.spell.dc]]{tirada de salvación de Sabiduría}. Tendrá &amp;Reference[Advantage] en ella si la realiza por sufrir daño. Si la supera, el conjuro terminará.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> Puedes hacer objetivo a una criatura adicional por cada nivel por encima de 1 que tenga el espacio.</p>",
+      "materials": "una tarta y una pluma",
       "effects": {
         "Uncontrollable Laughter": {
-          "name": "Uncontrollable Laughter",
-          "description": "<p>has the &amp;Reference[prone apply=false] and &amp;Reference[incapacitated apply=false] conditions for the duration. During that time, it laughs uncontrollably if it’s capable of laughter, and it can’t end the Prone condition on itself.</p><p>At the end of each of its turns and each time it takes damage, it makes another [[/save ability=wis dc=@attributes.spell.dc]] saving throw. The target has Advantage on the save if the save is triggered by damage. On a successful save, the spell ends.</p>"
+          "name": "Risa incontrolable",
+          "description": "<p>Tiene los estados &amp;Reference[prone]{Derribado} e &amp;Reference[incapacitated]{Incapacitado} hasta que el conjuro termine. Durante ese tiempo, se reirá de forma incontrolable si tiene la capacidad de reírse y no podrá poner fin a su estado de Derribado.</p><p>Al final de cada uno de sus turnos y cada vez que reciba daño, realizará otra [[/save wis dc=@attributes.spell.dc]]{tirada de salvación de Sabiduría}. Tendrá &amp;Reference[Advantage]{Ventaja} en ella si la realiza por sufrir daño. Si la supera, el conjuro terminará.</p>"
         }
       }
     },
@@ -3475,9 +3475,9 @@
       "materials": "rare inks worth 50+ GP, which the spell consumes"
     },
     "phbsplTensersFlo": {
-      "name": "Floating Disk",
-      "description": "<p>This spell creates a circular, horizontal plane of force, 3 feet in diameter and 1 inch thick, that floats 3 feet above the ground in an unoccupied space of your choice that you can see within range. The disk remains for the duration and can hold up to 500 pounds. If more weight is placed on it, the spell ends, and everything on the disk falls to the ground.</p><p>The disk is immobile while you are within 20 feet of it. If you move more than 20 feet away from it, the disk follows you so that it remains within 20 feet of you. It can move across uneven terrain, up or down stairs, slopes and the like, but it can't cross an elevation change of 10 feet or more. For example, the disk can't move across a 10-foot-deep pit, nor could it leave such a pit if it was created at the bottom.</p><p>If you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the spell ends.</p>",
-      "materials": "a drop of mercury"
+      "name": "Disco flotante",
+      "description": "<p>Este conjuro crea un plano de fuerza horizontal de 3 pies (90 cm) de diámetro y 1 pulgada (2,5 cm) de grosor que flota 3 pies (90 cm) por encima del suelo en un espacio sin ocupar de tu elección que puedas ver dentro del alcance. El disco dura hasta que termina el conjuro y puede soportar un peso de hasta 500 libras (250 kg). Si se pone más peso sobre él, el conjuro termina y todo lo que hay en el disco cae al suelo.</p><p>El disco permanecerá inmóvil mientras estés a 20 pies (6 m) o menos de él. Si te alejas a más de 20 pies (6 m) de él, te seguirá para mantenerse a 20 pies (6 m) de ti. Se puede mover por terreno irregular y subir y bajar escaleras, pendientes y similares, pero no puede superar un cambio de elevación de 10 pies (3 m) o más. Por ejemplo, el disco no puede cruzar un pozo de 10 pies (3 m) de profundidad ni salir de él si se crea en el fondo de este.</p><p>Si te alejas más de 100 pies (30 m) del disco (normalmente, porque no pueda superar un obstáculo para seguirte), el conjuro termina.</p>",
+      "materials": "una gota de mercurio"
     },
     "phbsplThaumaturg": {
       "name": "Taumaturgia",
@@ -3490,8 +3490,8 @@
       }
     },
     "phbsplThunderwav": {
-      "name": "Thunderwave",
-      "description": "<p>You unleash a wave of thunderous energy. Each creature in a 15-foot Cube originating from you makes a Constitution saving throw. On a failed save, a creature takes 2d8 Thunder damage and is pushed 10 feet away from you. On a successful save, a creature takes half as much damage only.</p><p>In addition, unsecured objects that are entirely within the Cube are pushed 10 feet away from you, and a thunderous boom is audible within 300 feet.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d8 for each spell slot level above 1.</p>"
+      "name": "Onda atronadora",
+      "description": "<p>Desatas una ola de energía atronadora. Todas las criaturas situadas en un Cubo de 15 pies (4,5 m) de lado adyacente a ti harán una [[/save con dc=@attributes.spell.dc]]{tirada de salvación de Constitución}. Si la fallan, recibirán [[/damage 2d8 thunder]]{2d8 de daño Trueno} y serán empujadas 10 pies (3 m) respecto a ti. Si la superan, solo sufrirán la mitad de ese daño.</p><p>Además, a los objetos sueltos que estén completamente dentro del Cubo se les empujará 10 pies (3 m) respecto a ti y la explosión atronadora podrá oírse a 300 pies (90 m) de distancia.</p><p><strong>Con un espacio de conjuro de nivel superior.</strong> El daño aumenta en [[/damage 1d8 thunder]]{1d8 de daño Trueno} por cada nivel por encima de 1 que tenga el espacio.</p>"
     },
     "phbsplTimeStop00": {
       "name": "Time Stop",
@@ -3590,16 +3590,16 @@
       }
     },
     "phbsplUnseenServ": {
-      "name": "Unseen Servant",
-      "description": "<p>This spell creates an Invisible, mindless, shapeless, Medium force that performs simple tasks at your command until the spell ends. The servant springs into existence in an unoccupied space on the ground within range. It has AC 10, 1 Hit Point, and a Strength of 2, and it can't attack. If it drops to 0 Hit Points, the spell ends.</p><p>Once on each of your turns as a Bonus Action, you can mentally command the servant to move up to 15 feet and interact with an object. The servant can perform simple tasks that a human could do, such as fetching things, cleaning, mending, folding clothes, lighting fires, serving food, and pouring drinks. Once you give the command, the servant performs the task to the best of its ability until it completes the task, then waits for your next command.</p><p>If you command the servant to perform a task that would move it more than 60 feet away from you, the spell ends.</p>",
-      "materials": "a bit of string and of wood"
+      "name": "Sirviente invisible",
+      "description": "<p>Este conjuro crea una fuerza Invisible de tamaño Mediano, sin mente y sin forma, que realiza las tareas sencillas que le ordenes hasta que el conjuro termine. El sirviente surge en un espacio sin ocupar en el suelo dentro del alcance. Tiene una CA de 10, 1 punto de golpe, una Fuerza de 2 y no puede atacar. Si sus Puntos de golpe se reducen a 0, el conjuro termina.</p><p>Una vez en cada uno de tus turnos como Acción Adicional, puedes ordenar mentalmente al sirviente que se mueva hasta 15 pies (4,5 m) y que interactúe con un objeto. El sirviente puede realizar tareas sencillas que también podría llevar a cabo un humano, como traer y llevar cosas, limpiar, remendar, plegar ropa, encender un fuego y servir comida o bebida. En cuanto das la orden, el sirviente realiza la tarea lo mejor que puede hasta que la completa y luego espera tu siguiente orden.</p><p>Si ordenas al sirviente que lleve a cabo una tarea que lo alejaría más de 60 pies (18 m) de ti, el conjuro termina.</p>",
+      "materials": "un trozo de cuerda y uno de madera"
     },
     "phbsplVampiricTo": {
       "name": "Vampiric Touch",
       "description": "<p>The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against one creature within reach. On a hit, the target takes 3d6 Necrotic damage, and you regain Hit Points equal to half the amount of Necrotic damage dealt.</p><p>Until the spell ends, you can make the attack again on each of your turns as a Magic action, targeting the same creature or a different one.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d6 for each spell slot level above 3.</p>"
     },
     "phbsplViciousMoc": {
-      "name": "Burla viciosa",
+      "name": "Burla dañina",
       "description": "<p>Profieres una sarta de improperios mezclados con encantamientos sutiles hacia una criatura que puedas ver u oír dentro del alcance. El objetivo deberá superar una [[/save wis dc=@attributes.spell.dc]]{tirada de salvación de Sabiduría} o recibirá [[/damage 1d6 psychic]]{1d6 de daño Psíquico} y tendrá Desventaja en la próxima tirada de ataque que realice antes de que acabe su siguiente turno.</p><p><strong>Mejora de truco.</strong> El daño aumenta en 1d6 cuando alcanzas los niveles 5 ([[/damage 2d6 psychic]]{2d6}), 11 ([[/damage 3d6 psychic]]{3d6}) y 17 ([[/damage 4d6 psychic]]{4d6}).</p>",
       "effects": {
         "Mocked": {
